@@ -1,53 +1,6 @@
 # Download hacker home (DHH)
 
-# tool options 
-------------------------------------------------------------------------------------------------       
-  0 . what is this tool
-  
-  1 . Prerequisites And Updates  
-  
-  2 . Get Your info 
-  
-  3 . Network Works 
-  
-  4 . Install my other tools for you 
-  
-  5 . Install Tools For DDos Attack 
-  
-  6 . Install Network Tools For Hacking
-  
-  7 . Install Exploitation Tools
-  
-  8 . DDos Attack On [ Websites/ or /In Network ]
-  
-  9 . Information Gathering
-  
- 10 . Searchsploit
-  
- 11  . Find CP Admin page of website 
-  
- 12  . Create Wordlist 
-  
- 13  . Install Information Gathering Tools 
-  
- 14  . Install Word List Tools 
-  
- 15  . Fix Problems In Kali Linux
-  
- 16  . Install Browsers
-  
- 17  . Install Anony Your Sulf Tools
-  
- 18  . Exploitation platform 
-  
- 19  . System Services
-  
- 20  . Install HID ATTACK
-  
- Q  . Exit -->
-  
- -------------------------------------------------------------------------------------------------
-
+![DHH](https://scontent.fjrs3-1.fna.fbcdn.net/v/t1.0-9/20476367_145650752683939_8317312292539460812_n.jpg?oh=5ab023515165b69a10db9cd83c69f7a9&oe=5A55CAD3)
 
 # what is DHH
 
