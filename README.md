@@ -26,19 +26,19 @@ The tool is under constant development :)
 
 1 > open your termnal
 
-2 > and type this command :> git clone https://github.com/Oseid/Download-Hacker-HOME.git
+2 > and type this command> git clone https://github.com/Oseid/Download-Hacker-HOME.git
 
 After it ends
 
-3 > type this command cd Dawonloa-Hacker-HOME/
+3 > type this command> cd Dawonloa-Hacker-HOME/
 
-4 > and type this command :>  chmod +x *
+4 > and type this command> chmod +x *
 
 Download complete!
 
 # How to run tool
 
-Easy type  this command :> ./DHH.sh
+Easy type  this command> ./DHH.sh
 
 
 # END that's all :)  
@@ -51,4 +51,4 @@ BY [Oseid Aldary]
 
 thanks for using 
 
-have a good day :)
+have a nice day, goodbye :)
