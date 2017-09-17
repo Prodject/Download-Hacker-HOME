@@ -43,7 +43,7 @@ Easy type
 ./DHH.sh
 
 
-# END tht's all :)  
+# END that's all :)  
 
 For Help Please Visit My Account[ https://www.facebook.com/profile.php?id=100017170449859 ] and tell me what the problem is   
 
