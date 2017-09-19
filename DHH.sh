@@ -119,10 +119,8 @@ chmod +x *                    #                                                 
 resize -s 38 150  > /dev/null #                                                                                       #
 ###############################                                                                                       #
                                                                                                                       #
-########################################## END OF CONFIGURATIONS TOOL #################################################              
-                                                                                          
+########################################## END OF CONFIGURATIONS TOOL #################################################                                                                                     
 clear
-th=this
 clear
 echo $RED"|$BLUE=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=$RED| "
 echo $RED"| ######                                                   |   #     #                                    #     #                      |"
@@ -135,7 +133,7 @@ echo $RED"| ######   ####  #    # #    # ######  ####  #    # #####  |   #     #
 echo $RED"|                                                          |                                                                           |"
 echo $RED"|$BLUE=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=$RED| "
 echo $RED"  |============================================================|"$RED"|[$BLUE We Are Anonymous Arabs$RED ]                                 $RED       }"
-echo $RED"  |$GREEN$th tool by [->[Oseid Aldary<-][JOKER11]              $RED     |"$RED"|[$BLUE We Are Legion$RED          ]          username:[$GREEN JOKER11$RED ]          }" 
+echo $RED"  |${GREEN}this tool by [->[Oseid Aldary<-][JOKER11]              $RED     |"$RED"|[$BLUE We Are Legion$RED          ]          username:[$GREEN JOKER11$RED ]          }" 
 echo $BULE"  |this tool for download the best tools for hacking andPentest|"$RED"|[$BLUE We Don't Forgive$RED       ]                                        }"
 echo $BULE"  |and will soon be the best to download hacking tools         |"$RED"|[$BLUE We Don't Forget $RED       ]          password:[         ]          }"
 echo $RED " |DHH V[10.5.1]                                               |"$RED"|[$BLUE Expect Us $RED             ]             welcome!                   }"
