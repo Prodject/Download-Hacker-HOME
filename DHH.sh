@@ -119,8 +119,10 @@ chmod +x *                    #                                                 
 resize -s 38 150  > /dev/null #                                                                                       #
 ###############################                                                                                       #
                                                                                                                       #
-########################################## END OF CONFIGURATIONS TOOL #################################################                                                                                     
+########################################## END OF CONFIGURATIONS TOOL #################################################              
+                                                                                          
 clear
+th=this
 clear
 echo $RED"|$BLUE=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=$RED| "
 echo $RED"| ######                                                   |   #     #                                    #     #                      |"
@@ -133,7 +135,7 @@ echo $RED"| ######   ####  #    # #    # ######  ####  #    # #####  |   #     #
 echo $RED"|                                                          |                                                                           |"
 echo $RED"|$BLUE=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=$RED| "
 echo $RED"  |============================================================|"$RED"|[$BLUE We Are Anonymous Arabs$RED ]                                 $RED       }"
-echo $RED"  |${GREEN}this tool by [->[Oseid Aldary<-][JOKER11]              $RED     |"$RED"|[$BLUE We Are Legion$RED          ]          username:[$GREEN JOKER11$RED ]          }" 
+echo $RED"  |$GREEN$th tool by [->[Oseid Aldary<-][JOKER11]              $RED     |"$RED"|[$BLUE We Are Legion$RED          ]          username:[$GREEN JOKER11$RED ]          }" 
 echo $BULE"  |this tool for download the best tools for hacking andPentest|"$RED"|[$BLUE We Don't Forgive$RED       ]                                        }"
 echo $BULE"  |and will soon be the best to download hacking tools         |"$RED"|[$BLUE We Don't Forget $RED       ]          password:[         ]          }"
 echo $RED " |DHH V[10.5.1]                                               |"$RED"|[$BLUE Expect Us $RED             ]             welcome!                   }"
@@ -3130,6 +3132,58 @@ fi
 
 }
 
+function TheBackToHack {
+clear
+echo
+echo "" $GREEN
+echo -n "Do you want install TheBackToHack TOOL ? [Y/N] : $RED"
+read tti
+if [[ $tti = Y || $tti = y ]];then
+clear
+echo
+echo "checking $RED[internet]$BLUE connections$RED........"
+echo
+  ping -c 1 google.com > /dev/null 2>&1
+  if [ "$?" != 0 ]
+
+then
+sleep 3
+clear
+echo
+echo
+echo $GREEN"[!]you not connect to the internet ! "$BLUE
+echo
+echo "[!]please Connect to the internet and try again :) " 
+echo
+exit
+fi
+echo
+echo $BLUE"[*]$GREEN[ CONNECT ]"
+sleep 1
+clear
+echo
+echo
+echo $BLUE"=======install TheBackToHack for you======"
+sleep 4
+echo "[*]working....."
+sleep 1
+git clone https://github.com/Oseid/TheBackToHack.git
+cd TheBackToHack
+chmod +x *
+./Installer.sh
+cd ..
+echo $GREEN"[*]Finishing....."
+sleep 7
+clear
+else
+if [[ $tti = N || $tti = n ]];then
+clear
+fi
+fi
+
+}
+
+
 function netools {
 clear
 echo
@@ -3153,11 +3207,14 @@ echo "##########################################################################
 echo                                     "Let's install my tools for you :) "
 echo "###########################################################################################################"$BLUE
 echo ""
-select netselc in "install NetSniper" "install Hash Create" "install WordLsGen" "install FindHosts" "install SSH-CRACKER" "install FindAdminPage" "install DDOSAR2" "install TwitterPhishing" "Exit"; do
+select netselc in "install NetSniper" "install TheBackToHack" "install Hash Create" "install WordLsGen" "install FindHosts" "install SSH-CRACKER" "install FindAdminPage" "install DDOSAR2" "install TwitterPhishing" "Exit"; do
 case $netselc in
          "install NetSniper")
                   NetSniper
                   clear ;;
+	"install TheBackToHack")
+		  TheBackToHack
+		  clear ;;
         "install Hash Create")
                   HashCreate
                   clear ;;
@@ -4230,6 +4287,7 @@ echo "============install aircrack-ng for you============"
 sleep 4
 echo "[*]working............"
 sleep 1
+				
 				apt-get -y install build-essential libssl-dev libnl-3-dev libnl-genl-3-dev dpkg-dev g++ g++-4.8 libc-dev-bin libc6-dev libstdc++-4.8-dev zlib1g-dev debian-keyring g++-multilib g++-4.8-multilib gcc-4.8-doc libstdc++6-4.8-dbg glibc-doc libstdc++-4.8-doc libalgorithm-merge-perl libssl-doc libalgorithm-diff-xs-perl libssl-dev build-essential
 				wget http://download.aircrack-ng.org/aircrack-ng-1.2-rc4.tar.gz
 				tar -xzf aircrack-ng-1.2-rc4.tar.gz
@@ -4239,6 +4297,7 @@ echo $GREEN"[*]Finishing....."
 sleep 7
 clear
 ./DHH.sh
+				
 			else
 if [[ $install = N || $install = n ]] ; then
 clear
