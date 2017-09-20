@@ -72,10 +72,10 @@ username=$(uname -n )                                                           
 MYMAC=$(ifconfig $intarconn | grep -o -E '([[:xdigit:]]{1,2}:){5}[[:xdigit:]]{1,2}')  #                               #
 ArCh=`uname -m`                                                                       #                               #
 if [ "$ArCh" = "i686" ]; then                                                         #                               #
-  arch="i686"                                                                         #                               #
+  arch=" 32 bit"                                                                      #                               #
                                                                                       #                               #
 else                                                                                  #                               #
-  arch="wine64"                                                                       #                               #
+  arch="64 bit"                                                                       #                               #
                                                                                       #                               #
 fi                                                                                    #                               #
                                                                                       #                               #
